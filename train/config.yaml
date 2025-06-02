@@ -1,0 +1,31 @@
+dataset:
+  metadata_path: "home/CharacterRepaint/scripts/dataset_metadata.json" # create_metadata.py 的输出
+  batch_size: 4 # 根据你的GPU显存调整
+  num_workers: 2 # 根据你的CPU核心数调整
+
+model_params: # 参数应与 UNetDenoisingModel 的默认值或你的期望值匹配
+  image_size: 288
+  in_channels: 1
+  out_channels: 1
+  model_channels: 64
+  channel_mult: [1, 2, 4, 8]
+  num_res_blocks: 2
+  time_emb_dim_ratio: 4
+  groups: 32
+
+diffusion_params:
+  num_timesteps: 1000    # DDPM 论文中常用的值
+  beta_start: 0.0001
+  beta_end: 0.02
+
+training_params:
+  epochs: 100
+  lr: 0.0001             # 学习率
+  output_dir: "/openbayes/home/CharacterRepaint/train_output/001-20250602-20:23" # 结果保存路径
+  save_checkpoint_freq: 10 # 每多少个epoch保存一次模型
+  save_visualization_freq: 5 # 每多少个epoch保存一次可视化结果
+  device: "cuda" # "cuda" or "cpu"
+
+visualization_params:
+  num_samples_to_visualize: 4 # 可视化多少个样本
+  fixed_noise_for_samples: True # 是否对可视化样本使用固定的初始噪声
