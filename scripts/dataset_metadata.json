@@ -1,0 +1,412 @@
+{
+    "base_noisy_dir": "/openbayes/home/CIRI/CIRI_demo/subset1/train/covered",
+    "base_clean_dir": "/openbayes/home/CIRI/CIRI_demo/subset1/train/intact",
+    "expected_size": [
+        288,
+        288
+    ],
+    "expected_mode": "L",
+    "image_pairs": [
+        {
+            "filename": "00029.png",
+            "noisy_path_relative": "00029.png",
+            "clean_path_relative": "00029.png"
+        },
+        {
+            "filename": "00163.png",
+            "noisy_path_relative": "00163.png",
+            "clean_path_relative": "00163.png"
+        },
+        {
+            "filename": "00319.png",
+            "noisy_path_relative": "00319.png",
+            "clean_path_relative": "00319.png"
+        },
+        {
+            "filename": "00342.png",
+            "noisy_path_relative": "00342.png",
+            "clean_path_relative": "00342.png"
+        },
+        {
+            "filename": "00496.png",
+            "noisy_path_relative": "00496.png",
+            "clean_path_relative": "00496.png"
+        },
+        {
+            "filename": "00715.png",
+            "noisy_path_relative": "00715.png",
+            "clean_path_relative": "00715.png"
+        },
+        {
+            "filename": "01128.png",
+            "noisy_path_relative": "01128.png",
+            "clean_path_relative": "01128.png"
+        },
+        {
+            "filename": "01220.png",
+            "noisy_path_relative": "01220.png",
+            "clean_path_relative": "01220.png"
+        },
+        {
+            "filename": "01280.png",
+            "noisy_path_relative": "01280.png",
+            "clean_path_relative": "01280.png"
+        },
+        {
+            "filename": "01347.png",
+            "noisy_path_relative": "01347.png",
+            "clean_path_relative": "01347.png"
+        },
+        {
+            "filename": "01516.png",
+            "noisy_path_relative": "01516.png",
+            "clean_path_relative": "01516.png"
+        },
+        {
+            "filename": "01930.png",
+            "noisy_path_relative": "01930.png",
+            "clean_path_relative": "01930.png"
+        },
+        {
+            "filename": "02539.png",
+            "noisy_path_relative": "02539.png",
+            "clean_path_relative": "02539.png"
+        },
+        {
+            "filename": "02707.png",
+            "noisy_path_relative": "02707.png",
+            "clean_path_relative": "02707.png"
+        },
+        {
+            "filename": "02894.png",
+            "noisy_path_relative": "02894.png",
+            "clean_path_relative": "02894.png"
+        },
+        {
+            "filename": "02917.png",
+            "noisy_path_relative": "02917.png",
+            "clean_path_relative": "02917.png"
+        },
+        {
+            "filename": "03049.png",
+            "noisy_path_relative": "03049.png",
+            "clean_path_relative": "03049.png"
+        },
+        {
+            "filename": "03157.png",
+            "noisy_path_relative": "03157.png",
+            "clean_path_relative": "03157.png"
+        },
+        {
+            "filename": "03371.png",
+            "noisy_path_relative": "03371.png",
+            "clean_path_relative": "03371.png"
+        },
+        {
+            "filename": "03450.png",
+            "noisy_path_relative": "03450.png",
+            "clean_path_relative": "03450.png"
+        },
+        {
+            "filename": "03744.png",
+            "noisy_path_relative": "03744.png",
+            "clean_path_relative": "03744.png"
+        },
+        {
+            "filename": "03941.png",
+            "noisy_path_relative": "03941.png",
+            "clean_path_relative": "03941.png"
+        },
+        {
+            "filename": "03992.png",
+            "noisy_path_relative": "03992.png",
+            "clean_path_relative": "03992.png"
+        },
+        {
+            "filename": "04525.png",
+            "noisy_path_relative": "04525.png",
+            "clean_path_relative": "04525.png"
+        },
+        {
+            "filename": "04973.png",
+            "noisy_path_relative": "04973.png",
+            "clean_path_relative": "04973.png"
+        },
+        {
+            "filename": "05266.png",
+            "noisy_path_relative": "05266.png",
+            "clean_path_relative": "05266.png"
+        },
+        {
+            "filename": "05753.png",
+            "noisy_path_relative": "05753.png",
+            "clean_path_relative": "05753.png"
+        },
+        {
+            "filename": "06002.png",
+            "noisy_path_relative": "06002.png",
+            "clean_path_relative": "06002.png"
+        },
+        {
+            "filename": "06125.png",
+            "noisy_path_relative": "06125.png",
+            "clean_path_relative": "06125.png"
+        },
+        {
+            "filename": "06182.png",
+            "noisy_path_relative": "06182.png",
+            "clean_path_relative": "06182.png"
+        },
+        {
+            "filename": "06631.png",
+            "noisy_path_relative": "06631.png",
+            "clean_path_relative": "06631.png"
+        },
+        {
+            "filename": "06756.png",
+            "noisy_path_relative": "06756.png",
+            "clean_path_relative": "06756.png"
+        },
+        {
+            "filename": "06803.png",
+            "noisy_path_relative": "06803.png",
+            "clean_path_relative": "06803.png"
+        },
+        {
+            "filename": "07018.png",
+            "noisy_path_relative": "07018.png",
+            "clean_path_relative": "07018.png"
+        },
+        {
+            "filename": "07142.png",
+            "noisy_path_relative": "07142.png",
+            "clean_path_relative": "07142.png"
+        },
+        {
+            "filename": "07188.png",
+            "noisy_path_relative": "07188.png",
+            "clean_path_relative": "07188.png"
+        },
+        {
+            "filename": "07226.png",
+            "noisy_path_relative": "07226.png",
+            "clean_path_relative": "07226.png"
+        },
+        {
+            "filename": "07239.png",
+            "noisy_path_relative": "07239.png",
+            "clean_path_relative": "07239.png"
+        },
+        {
+            "filename": "07332.png",
+            "noisy_path_relative": "07332.png",
+            "clean_path_relative": "07332.png"
+        },
+        {
+            "filename": "07590.png",
+            "noisy_path_relative": "07590.png",
+            "clean_path_relative": "07590.png"
+        },
+        {
+            "filename": "07878.png",
+            "noisy_path_relative": "07878.png",
+            "clean_path_relative": "07878.png"
+        },
+        {
+            "filename": "07882.png",
+            "noisy_path_relative": "07882.png",
+            "clean_path_relative": "07882.png"
+        },
+        {
+            "filename": "08109.png",
+            "noisy_path_relative": "08109.png",
+            "clean_path_relative": "08109.png"
+        },
+        {
+            "filename": "08161.png",
+            "noisy_path_relative": "08161.png",
+            "clean_path_relative": "08161.png"
+        },
+        {
+            "filename": "08350.png",
+            "noisy_path_relative": "08350.png",
+            "clean_path_relative": "08350.png"
+        },
+        {
+            "filename": "08583.png",
+            "noisy_path_relative": "08583.png",
+            "clean_path_relative": "08583.png"
+        },
+        {
+            "filename": "08717.png",
+            "noisy_path_relative": "08717.png",
+            "clean_path_relative": "08717.png"
+        },
+        {
+            "filename": "08872.png",
+            "noisy_path_relative": "08872.png",
+            "clean_path_relative": "08872.png"
+        },
+        {
+            "filename": "09218.png",
+            "noisy_path_relative": "09218.png",
+            "clean_path_relative": "09218.png"
+        },
+        {
+            "filename": "09461.png",
+            "noisy_path_relative": "09461.png",
+            "clean_path_relative": "09461.png"
+        },
+        {
+            "filename": "09475.png",
+            "noisy_path_relative": "09475.png",
+            "clean_path_relative": "09475.png"
+        },
+        {
+            "filename": "09666.png",
+            "noisy_path_relative": "09666.png",
+            "clean_path_relative": "09666.png"
+        },
+        {
+            "filename": "09721.png",
+            "noisy_path_relative": "09721.png",
+            "clean_path_relative": "09721.png"
+        },
+        {
+            "filename": "09841.png",
+            "noisy_path_relative": "09841.png",
+            "clean_path_relative": "09841.png"
+        },
+        {
+            "filename": "10021.png",
+            "noisy_path_relative": "10021.png",
+            "clean_path_relative": "10021.png"
+        },
+        {
+            "filename": "10458.png",
+            "noisy_path_relative": "10458.png",
+            "clean_path_relative": "10458.png"
+        },
+        {
+            "filename": "10517.png",
+            "noisy_path_relative": "10517.png",
+            "clean_path_relative": "10517.png"
+        },
+        {
+            "filename": "10667.png",
+            "noisy_path_relative": "10667.png",
+            "clean_path_relative": "10667.png"
+        },
+        {
+            "filename": "11005.png",
+            "noisy_path_relative": "11005.png",
+            "clean_path_relative": "11005.png"
+        },
+        {
+            "filename": "11060.png",
+            "noisy_path_relative": "11060.png",
+            "clean_path_relative": "11060.png"
+        },
+        {
+            "filename": "11324.png",
+            "noisy_path_relative": "11324.png",
+            "clean_path_relative": "11324.png"
+        },
+        {
+            "filename": "11370.png",
+            "noisy_path_relative": "11370.png",
+            "clean_path_relative": "11370.png"
+        },
+        {
+            "filename": "11621.png",
+            "noisy_path_relative": "11621.png",
+            "clean_path_relative": "11621.png"
+        },
+        {
+            "filename": "11666.png",
+            "noisy_path_relative": "11666.png",
+            "clean_path_relative": "11666.png"
+        },
+        {
+            "filename": "11911.png",
+            "noisy_path_relative": "11911.png",
+            "clean_path_relative": "11911.png"
+        },
+        {
+            "filename": "12016.png",
+            "noisy_path_relative": "12016.png",
+            "clean_path_relative": "12016.png"
+        },
+        {
+            "filename": "12173.png",
+            "noisy_path_relative": "12173.png",
+            "clean_path_relative": "12173.png"
+        },
+        {
+            "filename": "12244.png",
+            "noisy_path_relative": "12244.png",
+            "clean_path_relative": "12244.png"
+        },
+        {
+            "filename": "12755.png",
+            "noisy_path_relative": "12755.png",
+            "clean_path_relative": "12755.png"
+        },
+        {
+            "filename": "12925.png",
+            "noisy_path_relative": "12925.png",
+            "clean_path_relative": "12925.png"
+        },
+        {
+            "filename": "13174.png",
+            "noisy_path_relative": "13174.png",
+            "clean_path_relative": "13174.png"
+        },
+        {
+            "filename": "13225.png",
+            "noisy_path_relative": "13225.png",
+            "clean_path_relative": "13225.png"
+        },
+        {
+            "filename": "13320.png",
+            "noisy_path_relative": "13320.png",
+            "clean_path_relative": "13320.png"
+        },
+        {
+            "filename": "13362.png",
+            "noisy_path_relative": "13362.png",
+            "clean_path_relative": "13362.png"
+        },
+        {
+            "filename": "13605.png",
+            "noisy_path_relative": "13605.png",
+            "clean_path_relative": "13605.png"
+        },
+        {
+            "filename": "13727.png",
+            "noisy_path_relative": "13727.png",
+            "clean_path_relative": "13727.png"
+        },
+        {
+            "filename": "13818.png",
+            "noisy_path_relative": "13818.png",
+            "clean_path_relative": "13818.png"
+        },
+        {
+            "filename": "13959.png",
+            "noisy_path_relative": "13959.png",
+            "clean_path_relative": "13959.png"
+        },
+        {
+            "filename": "14021.png",
+            "noisy_path_relative": "14021.png",
+            "clean_path_relative": "14021.png"
+        },
+        {
+            "filename": "14694.png",
+            "noisy_path_relative": "14694.png",
+            "clean_path_relative": "14694.png"
+        }
+    ],
+    "num_valid_pairs": 80
+}
