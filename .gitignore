@@ -1,2 +1,8 @@
 # 忽略数据集文件夹
 datasets/ 
+
+# 忽略 Python 虚拟环境文件夹
+venv/
+.env/
+ENV/
+.venv/ 
