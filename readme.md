@@ -1,3 +1,10 @@
+您好，我想您可能是想让我输出更新后的 `README.md` 文件内容，而不是 `readme.py`。`.md` 是 Markdown 文件的扩展名，通常用于编写文档，比如 README。
+
+根据我们之前讨论的 `inference.py` 的修改（加入了对输入图像预先叠加高斯噪声的选项），我会更新 `README.md` 中关于 `inference.py` 使用说明的部分。
+
+以下是更新后的完整 `README.md` 内容：
+
+```markdown
 # 古籍拓片去噪与修复扩散模型
 
 本项目旨在使用 U-Net 架构的扩散模型（Denoising Diffusion Probabilistic Models, DDPM）对古籍拓片的扫描图像进行去噪和修复。
@@ -18,6 +25,7 @@
 - [结果与可视化](#结果与可视化)
 - [模型推理 (`inference.py`)](#模型推理-inferencepy)
   - [推理方法说明 (SDEdit)](#推理方法说明-sdedit)
+  - [可选：对输入图像预加高斯噪声](#可选对输入图像预加高斯噪声)
   - [使用方法](#使用方法-1)
 - [后续工作与展望](#后续工作与展望)
 
@@ -34,7 +42,7 @@ your_project_directory/
 ├── model.py                 # 定义 U-Net 扩散模型结构
 ├── create_metadata.py       # 数据集预处理脚本，生成元数据文件
 ├── train.py                 # 模型训练脚本 (支持学习率调度器)
-├── inference.py             # 模型推理脚本 (使用SDEdit方法)
+├── inference.py             # 模型推理脚本 (使用SDEdit方法，支持对输入预加噪声)
 ├── config.yaml              # 训练配置文件 (超参数、路径、学习率调度器等)
 ├── dataset_metadata.json    # (示例) 由 create_metadata.py 生成
 ├── README.md                # 本文档
@@ -206,16 +214,24 @@ python train.py
 
 ## 模型推理 (`inference.py`)
 
-训练完成后，可以使用 `inference.py` 脚本对单张有噪声的图像进行去噪处理。该脚本使用了一种称为 SDEdit (Stochastic Denoising Editing) 的方法。
+训练完成后，可以使用 `inference.py` 脚本对单张有噪声的图像进行去噪处理。该脚本使用了一种称为 SDEdit (Stochastic Denoising Editing) 的方法，并支持对输入图像预先叠加一层随机高斯噪声。
 
 ### 推理方法说明 (SDEdit)
 
 标准的扩散模型采样是从纯随机噪声开始生成图像。而 SDEdit 方法允许我们基于一张已有的输入图像（在这里是你的带噪拓片）进行生成/修复。其基本步骤是：
 
-1.  **前向加噪**: 对输入的带噪图像，先执行一小部分（由 `sde_strength` 参数控制）的前向扩散步骤，使其变得更模糊，更接近高斯噪声。
-2.  **反向去噪**: 然后，从这个加噪后的图像和对应的时间步开始，执行扩散模型的标准反向采样过程，逐步去噪，直到生成最终的修复图像。
+1.  **(可选) 预加高斯噪声**: 对输入的原始带噪图像，可以先额外叠加一层可控强度的随机高斯噪声。
+2.  **前向加噪 (SDEdit 核心)**: 对（可能已预加噪的）图像，执行一小部分（由 `sde_strength` 参数控制）的前向扩散步骤，使其变得更模糊，更接近高斯噪声。
+3.  **反向去噪**: 然后，从这个加噪后的图像和对应的时间步开始，执行扩散模型的标准反向采样过程，逐步去噪，直到生成最终的修复图像。
 
-`sde_strength` 参数控制了对输入图像的“信任度”与模型“创造性修复”之间的平衡。
+`sde_strength` 参数控制了对输入图像的“信任度”与模型“创造性修复”之间的平衡。预加高斯噪声则引入了更多的随机性和潜在的生成多样性。
+
+### 可选：对输入图像预加高斯噪声
+
+通过命令行参数，你可以在 SDEdit 流程开始前，为输入的原始带噪图像额外添加一层高斯噪声。这可以：
+- 引入更多的随机性，使得对于同一输入，每次运行的结果可能略有不同。
+- 鼓励模型进行更大胆的重构，可能有助于处理某些类型的顽固噪声或大面积破损。
+- 需要通过实验调整 `--initial_noise_std` 参数来控制预加噪声的强度。
 
 ### 使用方法
 
@@ -231,37 +247,65 @@ python inference.py \
 
 **必需参数：**
 
-*   `--config_path <path_to_training_config.yaml>`: **必需**。指向你训练模型时使用的 `config.yaml` 文件。推理脚本需要它来正确构建模型结构和设置扩散参数。
-*   `--checkpoint_path <path_to_model_checkpoint.pth>`: **必需**。指向训练好的模型检查点文件（例如，`./training_results/experiment_001/checkpoints/model_epoch_100.pth`）。
+*   `--config_path <path_to_training_config.yaml>`: **必需**。指向你训练模型时使用的 `config.yaml` 文件。
+*   `--checkpoint_path <path_to_model_checkpoint.pth>`: **必需**。指向训练好的模型检查点文件。
 *   `--input_image_path <path_to_your_noisy_image.png>`: **必需**。你想要进行去噪处理的原始带噪图像的路径。
 
 **可选参数：**
 
 *   `--output_image_path <path_to_save_output.png>`: 可选。去噪后图像的保存路径。默认为 `denoised_output.png`。
-*   `--sde_strength <integer>`: 可选。SDEdit 的强度参数，表示对输入图像先进行多少步前向加噪。**这是一个关键参数，需要根据效果进行调整。** 默认值为 `250`。该值必须小于 `config.yaml` 中定义的 `diffusion_params.num_timesteps` (通常是1000)。可以尝试 100-500 范围内的值。
+*   `--sde_strength <integer>`: 可选。SDEdit 的强度参数，表示在（可能已预加噪的）输入图像上先进行多少步前向加噪。**这是一个关键参数，需要根据效果进行调整。** 默认值为 `250`。该值必须小于 `config.yaml` 中定义的 `diffusion_params.num_timesteps` (通常是1000)，且应为非负数。
     *   **较小的值** (例如 100-200): 结果更忠实于原始输入图像的结构，但去噪可能不彻底。
     *   **较大的值** (例如 300-500+): 去噪效果可能更强，但可能会更多地依赖模型“幻想”内容，细节可能与原图有偏差。
+    *   如果为 `0`，则不执行 SDEdit 的前向加噪步骤，直接从（可能已预加噪的）输入图像开始（反向采样循环将不运行，结果是输入或预加噪后的输入）。
 *   `--device <cuda|cpu>`: 可选。指定推理设备。默认为 `cuda` (如果可用)。
+*   `--add_initial_gaussian`: 可选。布尔标志。如果设置，则在 SDEdit 流程开始前，对输入图像预先叠加一层高斯噪声。
+*   `--initial_noise_std <float>`: 可选。如果设置了 `--add_initial_gaussian`，此参数定义了预加高斯噪声的标准差。默认为 `0.05`。可以尝试 `0.01` 到 `0.2` 范围内的值。
 
 **示例：**
 
-```bash
-python inference.py \
-    --config_path ./config.yaml \
-    --checkpoint_path ./training_results/experiment_001/checkpoints/model_epoch_100.pth \
-    --input_image_path ./data/noisy_sample.png \
-    --output_image_path ./denoised_sample_sde200.png \
-    --sde_strength 200
-```
+1.  **基本 SDEdit 推理：**
+    ```bash
+    python inference.py \
+        --config_path ./config.yaml \
+        --checkpoint_path ./training_results/experiment_001/checkpoints/model_epoch_100.pth \
+        --input_image_path ./data/noisy_sample.png \
+        --output_image_path ./denoised_sample_sde200.png \
+        --sde_strength 200
+    ```
+
+2.  **SDEdit 推理，并对输入图像预加高斯噪声：**
+    ```bash
+    python inference.py \
+        --config_path ./config.yaml \
+        --checkpoint_path ./training_results/experiment_001/checkpoints/model_epoch_100.pth \
+        --input_image_path ./data/noisy_sample.png \
+        --output_image_path ./denoised_sample_sde200_initnoise008.png \
+        --sde_strength 200 \
+        --add_initial_gaussian \
+        --initial_noise_std 0.08
+    ```
 脚本执行后，会显示原始输入图像和去噪后的图像，并将去噪结果保存到指定路径。
 
 ## 后续工作与展望
 
 - **模型评估**: 使用独立的测试集对训练好的模型进行定量（如 PSNR, SSIM）和定性评估。
-- **超参数调优**: 进一步调整学习率、模型大小、扩散步数、SDEdit强度等超参数。
+- **超参数调优**: 进一步调整学习率、模型大小、扩散步数、SDEdit强度、预加噪声强度等超参数。
 - **采样策略**: 探索更高级的采样方法 (如 DDIM) 可能以更少的采样步数获得更好的生成质量或更快的推理速度。
 - **条件扩散**: 如果有额外的条件信息，可以探索条件扩散模型。
 - **应用部署**: 将训练好的模型集成到实际的应用中。
 
 ---
 ```
+
+**这次更新的主要内容集中在 `模型推理 (inference.py)` 章节：**
+
+1.  **项目结构图**：更新了 `inference.py` 的描述，提到支持对输入预加噪声。
+2.  **推理方法说明 (SDEdit)**：增加了对可选的“预加高斯噪声”步骤的描述。
+3.  **新增章节：“可选：对输入图像预加高斯噪声”**：详细解释了这个新功能的含义和作用。
+4.  **使用方法 -> 可选参数**：
+    *   添加了 `--add_initial_gaussian` 和 `--initial_noise_std` 两个新参数的说明。
+    *   稍微调整了对 `--sde_strength` 为 `0` 时的行为描述，使其更准确。
+5.  **使用方法 -> 示例**：增加了一个使用预加高斯噪声功能的命令行示例。
+
+希望这个版本的 README 更能满足你的需求！
