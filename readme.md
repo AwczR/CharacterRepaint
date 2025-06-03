@@ -10,13 +10,15 @@
 - [数据准备](#数据准备)
   - [数据集结构](#数据集结构-1)
   - [预处理脚本 (`create_metadata.py`)](#预处理脚本-create_metadatapy)
-    - [使用方法](#使用方法)
-    - [输出](#输出)
 - [模型训练 (`train.py`)](#模型训练-trainpy)
   - [配置文件 (`config.yaml`)](#配置文件-configyaml)
+  - [学习率调度器](#学习率调度器)
   - [开始训练](#开始训练)
   - [训练过程](#训练过程)
 - [结果与可视化](#结果与可视化)
+- [模型推理 (`inference.py`)](#模型推理-inferencepy)
+  - [推理方法说明 (SDEdit)](#推理方法说明-sdedit)
+  - [使用方法](#使用方法-1)
 - [后续工作与展望](#后续工作与展望)
 
 ## 项目概述
@@ -31,8 +33,9 @@
 your_project_directory/
 ├── model.py                 # 定义 U-Net 扩散模型结构
 ├── create_metadata.py       # 数据集预处理脚本，生成元数据文件
-├── train.py                 # 模型训练脚本
-├── config.yaml              # 训练配置文件 (超参数、路径等)
+├── train.py                 # 模型训练脚本 (支持学习率调度器)
+├── inference.py             # 模型推理脚本 (使用SDEdit方法)
+├── config.yaml              # 训练配置文件 (超参数、路径、学习率调度器等)
 ├── dataset_metadata.json    # (示例) 由 create_metadata.py 生成
 ├── README.md                # 本文档
 │
@@ -75,7 +78,6 @@ pip install torch torchvision torchaudio pillow tqdm matplotlib pyyaml numpy
 ```bash
 pip install -r requirements.txt
 ```
-(你可能需要根据实际安装的包版本生成 `requirements.txt`)
 
 ## 数据准备
 
@@ -102,64 +104,29 @@ dataset_root/                 # 例如 ./data/
 
 ### 预处理脚本 (`create_metadata.py`)
 
-此脚本用于扫描图像文件夹、匹配文件对、可选地校验图像，并生成一个 JSON 格式的元数据文件。这个元数据文件将在后续的模型训练阶段被直接加载。
+此脚本用于扫描图像文件夹、匹配文件对、可选地校验图像，并生成一个 JSON 格式的元数据文件。这个元数据文件将在后续的模型训练阶段被直接加载。具体使用方法请参考该脚本内部的注释或运行 `python create_metadata.py --help`。
 
-#### 使用方法
-
-通过命令行运行脚本：
-
-```bash
-python create_metadata.py --noisy_dir <path_to_noisy_images> --clean_dir <path_to_clean_images> [options]
-```
-
-**参数说明：**
-
-*   `--noisy_dir <path_to_noisy_images>`: **必需**。包含有噪声图像的文件夹路径。
-*   `--clean_dir <path_to_clean_images>`: **必需**。包含无噪声（清晰）图像的文件夹路径。
-*   `--output_file <filename.json>`: 可选。指定输出的元数据 JSON 文件的名称和路径。默认为 `dataset_metadata.json`。
-*   `--skip_verification`: 可选。如果设置此标志，脚本将跳过对每个图像文件进行尺寸和模式的校验。
-
-**示例：**
+**基本使用示例：**
 
 ```bash
 python create_metadata.py --noisy_dir ./data/noisy_images --clean_dir ./data/clean_images --output_file dataset_metadata.json
 ```
 
-#### 输出
-
-脚本成功运行后，会生成一个 JSON 格式的元数据文件（例如 `dataset_metadata.json`）。该文件包含了训练所需的所有图像路径信息，其结构大致如下：
-
-```json
-{
-    "base_noisy_dir": "/full/path/to/your/noisy_images",
-    "base_clean_dir": "/full/path/to/your/clean_images",
-    "expected_size": [288, 288],
-    "expected_mode": "L",
-    "image_pairs": [
-        {
-            "filename": "001.png",
-            "noisy_path_relative": "001.png",
-            "clean_path_relative": "001.png"
-        }
-        // ... 更多图像对
-    ],
-    "num_valid_pairs": 1234
-}
-```
+脚本成功运行后，会生成一个 JSON 格式的元数据文件，包含训练所需的所有图像路径信息。
 
 ## 模型训练 (`train.py`)
 
-`train.py` 脚本负责加载数据、初始化模型、并执行训练循环。
+`train.py` 脚本负责加载数据、初始化模型、并执行训练循环，现在支持学习率调度器。
 
 ### 配置文件 (`config.yaml`)
 
-所有训练相关的参数，如数据集路径、模型超参数、学习率、批大小、训练轮数等，都通过 `config.yaml` 文件进行管理。在开始训练前，请务必检查并根据你的需求修改此文件。
+所有训练相关的参数，如数据集路径、模型超参数、学习率、批大小、训练轮数以及学习率调度器配置，都通过 `config.yaml` 文件进行管理。在开始训练前，请务必检查并根据你的需求修改此文件。
 
-一个 `config.yaml` 的示例结构如下：
+一个 `config.yaml` 的示例结构（包含学习率调度器）如下：
 
 ```yaml
 dataset:
-  metadata_path: "dataset_metadata.json" # create_metadata.py 的输出
+  metadata_path: "/openbayes/home/CharacterRepaint/scripts/dataset_metadata.json"
   batch_size: 4
   num_workers: 2
 
@@ -181,19 +148,36 @@ diffusion_params:
 training_params:
   epochs: 100
   lr: 0.0001
-  output_dir: "training_results" # 结果保存路径
+  scheduler: # 可选的学习率调度器配置
+    name: "StepLR"      # 支持 "StepLR", "Cosine", "Exponential"
+    step_size: 30       # (用于 StepLR) 每 step_size 个 epoch 将 LR 乘以 gamma
+    gamma: 0.5          # (用于 StepLR, ExponentialLR) 衰减倍数
+    # t_max: 100        # (用于 CosineAnnealingLR) 余弦周期的最大迭代次数
+    # eta_min: 0        # (用于 CosineAnnealingLR) 学习率的最小值
+  output_dir: "training_results/experiment_001" # 结果保存路径
   save_checkpoint_freq: 10
   save_visualization_freq: 5
-  device: "cuda" # "cuda" or "cpu"
+  device: "cuda"
 
 visualization_params:
   num_samples_to_visualize: 4
   fixed_noise_for_samples: True
 ```
 
+### 学习率调度器
+
+`train.py` 现在支持通过 `config.yaml` 文件配置学习率调度器。在 `training_params` 下添加 `scheduler` 字段即可启用。
+
+支持的调度器类型 (`name` 字段)：
+- `StepLR`: 每隔 `step_size` 个 epoch，学习率乘以 `gamma`。
+- `CosineAnnealingLR`: 使用余弦退火调整学习率。需要参数 `t_max` (通常设为总 epochs) 和 `eta_min`。
+- `ExponentialLR`: 每个 epoch 后，学习率乘以 `gamma`。
+
+如果 `training_params` 中没有 `scheduler` 字段，则不使用学习率调度器。
+
 ### 开始训练
 
-确保你的 `dataset_metadata.json` (或你在 `config.yaml` 中指定的路径) 已经生成，并且 `config.yaml` 文件配置正确。然后运行：
+确保你的元数据文件 (例如 `dataset_metadata.json`) 已经生成，并且 `config.yaml` 文件配置正确。然后运行：
 
 ```bash
 python train.py --config config.yaml
@@ -205,36 +189,79 @@ python train.py
 
 ### 训练过程
 
-- **数据加载**: 训练脚本会根据 `config.yaml` 中的 `dataset.metadata_path` 加载元数据，并创建 PyTorch `Dataset` 和 `DataLoader`。
-- **模型初始化**: 根据 `config.yaml` 中的 `model_params` 初始化 `UNetDenoisingModel`。
-- **扩散过程**: 训练时，对每个干净图像 `x_0`，脚本会：
-    1. 随机采样一个时间步 `t`。
-    2. 生成高斯噪声 `ε`。
-    3. 计算带噪图像 `x_t = sqrt(α_bar_t) * x_0 + sqrt(1 - α_bar_t) * ε` (前向扩散)。
-    4. 将 `x_t` 和 `t` 输入模型，模型预测噪声 `ε_θ(x_t, t)`。
-    5. 计算损失 (通常是 `predicted_noise` 和真实添加的 `ε` 之间的 MSE Loss)。
-- **优化**: 使用 AdamW 优化器更新模型参数。
-- **进度显示**: 在命令行/终端，每个 epoch 内会显示一个 `tqdm` 进度条，实时更新已处理批次、当前批次损失、处理速度和预计剩余时间。
+- **数据加载、模型初始化、扩散过程**：与之前版本类似。
+- **优化**: 使用 AdamW 优化器。如果配置了学习率调度器，则在每个 epoch 结束后调用 `scheduler.step()` 更新学习率。
+- **进度显示**: 在命令行/终端，每个 epoch 内会显示一个 `tqdm` 进度条，实时更新已处理批次、当前批次损失。每个 epoch 结束后会打印平均损失和当前学习率。
 
 ## 结果与可视化
 
-训练过程中产生的结果会保存在 `config.yaml` 中 `training_params.output_dir` 指定的目录下 (默认为 `training_results/`)。
+训练过程中产生的结果会保存在 `config.yaml` 中 `training_params.output_dir` 指定的目录下。
 
 - **`checkpoints/`**: 存放模型检查点 (`.pth` 文件)。
     - 文件名格式: `model_epoch_XXX.pth`。
-    - 包含模型权重、优化器状态、epoch 数和该 epoch 的损失。
-    - 保存频率由 `save_checkpoint_freq` 控制。
+    - 包含模型权重、优化器状态、(若使用)学习率调度器状态、epoch 数和该 epoch 的损失。
 - **`visualizations/`**: 存放可视化结果。
-    - **`loss_plot.png`**: 训练损失随 epoch 变化的曲线图，会定期更新。
-    - **`epoch_XXXX_samples.png`**: 使用当前 epoch 的模型从噪声生成的去噪样本图像，用于评估模型生成效果。生成频率由 `save_visualization_freq` 控制。
-    - (可选) **`epoch_XXXX_denoising_process.gif`**: 如果在代码中启用了该功能，会保存去噪过程的GIF动画。
+    - **`loss_plot.png`**: 训练损失随 epoch 变化的曲线图。
+    - **`epoch_XXXX_samples.png`**: 使用当前 epoch 的模型从噪声生成的去噪样本图像。
+
+## 模型推理 (`inference.py`)
+
+训练完成后，可以使用 `inference.py` 脚本对单张有噪声的图像进行去噪处理。该脚本使用了一种称为 SDEdit (Stochastic Denoising Editing) 的方法。
+
+### 推理方法说明 (SDEdit)
+
+标准的扩散模型采样是从纯随机噪声开始生成图像。而 SDEdit 方法允许我们基于一张已有的输入图像（在这里是你的带噪拓片）进行生成/修复。其基本步骤是：
+
+1.  **前向加噪**: 对输入的带噪图像，先执行一小部分（由 `sde_strength` 参数控制）的前向扩散步骤，使其变得更模糊，更接近高斯噪声。
+2.  **反向去噪**: 然后，从这个加噪后的图像和对应的时间步开始，执行扩散模型的标准反向采样过程，逐步去噪，直到生成最终的修复图像。
+
+`sde_strength` 参数控制了对输入图像的“信任度”与模型“创造性修复”之间的平衡。
+
+### 使用方法
+
+通过命令行运行推理脚本：
+
+```bash
+python inference.py \
+    --config_path <path_to_training_config.yaml> \
+    --checkpoint_path <path_to_model_checkpoint.pth> \
+    --input_image_path <path_to_your_noisy_image.png> \
+    [options]
+```
+
+**必需参数：**
+
+*   `--config_path <path_to_training_config.yaml>`: **必需**。指向你训练模型时使用的 `config.yaml` 文件。推理脚本需要它来正确构建模型结构和设置扩散参数。
+*   `--checkpoint_path <path_to_model_checkpoint.pth>`: **必需**。指向训练好的模型检查点文件（例如，`./training_results/experiment_001/checkpoints/model_epoch_100.pth`）。
+*   `--input_image_path <path_to_your_noisy_image.png>`: **必需**。你想要进行去噪处理的原始带噪图像的路径。
+
+**可选参数：**
+
+*   `--output_image_path <path_to_save_output.png>`: 可选。去噪后图像的保存路径。默认为 `denoised_output.png`。
+*   `--sde_strength <integer>`: 可选。SDEdit 的强度参数，表示对输入图像先进行多少步前向加噪。**这是一个关键参数，需要根据效果进行调整。** 默认值为 `250`。该值必须小于 `config.yaml` 中定义的 `diffusion_params.num_timesteps` (通常是1000)。可以尝试 100-500 范围内的值。
+    *   **较小的值** (例如 100-200): 结果更忠实于原始输入图像的结构，但去噪可能不彻底。
+    *   **较大的值** (例如 300-500+): 去噪效果可能更强，但可能会更多地依赖模型“幻想”内容，细节可能与原图有偏差。
+*   `--device <cuda|cpu>`: 可选。指定推理设备。默认为 `cuda` (如果可用)。
+
+**示例：**
+
+```bash
+python inference.py \
+    --config_path ./config.yaml \
+    --checkpoint_path ./training_results/experiment_001/checkpoints/model_epoch_100.pth \
+    --input_image_path ./data/noisy_sample.png \
+    --output_image_path ./denoised_sample_sde200.png \
+    --sde_strength 200
+```
+脚本执行后，会显示原始输入图像和去噪后的图像，并将去噪结果保存到指定路径。
 
 ## 后续工作与展望
 
 - **模型评估**: 使用独立的测试集对训练好的模型进行定量（如 PSNR, SSIM）和定性评估。
-- **超参数调优**: 进一步调整学习率、模型大小、扩散步数等超参数以获得更优性能。
-- **采样策略**: 尝试更高级的采样方法 (如 DDIM) 可能以更少的采样步数获得更好的生成质量。
-- **条件扩散**: 如果有额外的条件信息（如拓片类型、破损程度等），可以探索条件扩散模型。
-- **应用部署**: 将训练好的模型集成到实际的应用中，例如一个用户友好的拓片修复工具。
+- **超参数调优**: 进一步调整学习率、模型大小、扩散步数、SDEdit强度等超参数。
+- **采样策略**: 探索更高级的采样方法 (如 DDIM) 可能以更少的采样步数获得更好的生成质量或更快的推理速度。
+- **条件扩散**: 如果有额外的条件信息，可以探索条件扩散模型。
+- **应用部署**: 将训练好的模型集成到实际的应用中。
 
 ---
+```
