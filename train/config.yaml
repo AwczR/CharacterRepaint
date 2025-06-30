@@ -1,9 +1,10 @@
+# config.yaml (兼容新版 train.py，保留原始参数值)
 dataset:
-  metadata_path: "home/CharacterRepaint/scripts/dataset_metadata.json" # create_metadata.py 的输出
-  batch_size: 4 # 根据你的GPU显存调整
-  num_workers: 2 # 根据你的CPU核心数调整
+  metadata_path: "/openbayes/home/CharacterRepaint/scripts/dataset_metadata.json"
+  batch_size: 8
+  num_workers: 2
 
-model_params: # 参数应与 UNetDenoisingModel 的默认值或你的期望值匹配
+model_params:
   image_size: 288
   in_channels: 1
   out_channels: 1
@@ -14,18 +15,31 @@ model_params: # 参数应与 UNetDenoisingModel 的默认值或你的期望值�
   groups: 32
 
 diffusion_params:
-  num_timesteps: 1000    # DDPM 论文中常用的值
+  num_timesteps: 1000
   beta_start: 0.0001
   beta_end: 0.02
 
 training_params:
   epochs: 100
-  lr: 0.0001             # 学习率
-  output_dir: "/openbayes/home/CharacterRepaint/train_output/001-20250602-20:23" # 结果保存路径
-  save_checkpoint_freq: 10 # 每多少个epoch保存一次模型
-  save_visualization_freq: 5 # 每多少个epoch保存一次可视化结果
-  device: "cuda" # "cuda" or "cpu"
+  lr: 0.001
+  scheduler:
+    name: "StepLR"
+    step_size: 25
+    gamma: 0.35
+  output_dir: "/openbayes/home/CharacterRepaint/train_output/002-20250630-16:43"
+  save_checkpoint_freq: 100
+  save_visualization_freq: 5
+  device: "cuda"
 
+# <<<< 结构调整以适配新版 train.py >>>>
 visualization_params:
-  num_samples_to_visualize: 4 # 可视化多少个样本
-  fixed_noise_for_samples: True # 是否对可视化样本使用固定的初始噪声
+  # 此参数依然有效，决定了验证批次的大小和可视化网格的宽度
+  num_samples_to_visualize: 4
+  
+  # <<<< 新增的必需参数 >>>>
+  # 用于控制可视化采样时的修复强度。
+  # 我们需要为它提供一个默认值，250 是一个合理的开始。
+  start_timestep: 250
+  
+  # <<<< 不再使用的参数（可以安全删除或注释掉） >>>>
+  # fixed_noise_for_samples: True # 新的采样逻辑不再使用固定的噪声图
