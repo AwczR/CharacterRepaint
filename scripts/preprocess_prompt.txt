@@ -1,0 +1,4 @@
+python preprocess_dataset.py \
+    --noisy_dir "/openbayes/home/CIRI/CIRI_demo/subset2/syth/covered" \
+    --clean_dir "/openbayes/home/CIRI/CIRI_demo/subset2/syth/intact_img" \
+    --output_file "CIRI_syth_metadata.json"
