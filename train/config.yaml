@@ -1,7 +1,7 @@
 # config.yaml (兼容新版 train.py，保留原始参数值)
 dataset:
-  metadata_path: "/openbayes/home/CharacterRepaint/scripts/dataset_metadata.json"
-  batch_size: 8
+  metadata_path: "/openbayes/home/CharacterRepaint/scripts/CIRI_syth_metadata.json"
+  batch_size: 12
   num_workers: 2
 
 model_params:
@@ -21,12 +21,12 @@ diffusion_params:
 
 training_params:
   epochs: 100
-  lr: 0.001
+  lr: 0.0001
   scheduler:
     name: "StepLR"
     step_size: 25
     gamma: 0.35
-  output_dir: "/openbayes/home/CharacterRepaint/train_output/002-20250630-16:43"
+  output_dir: "/openbayes/home/CharacterRepaint/train_output/003-20250701-11:46_new_dataset"
   save_checkpoint_freq: 100
   save_visualization_freq: 5
   device: "cuda"
