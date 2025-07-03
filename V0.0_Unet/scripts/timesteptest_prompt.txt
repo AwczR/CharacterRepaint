@@ -1,0 +1,7 @@
+python test_timesteps.py \
+    -c /openbayes/home/CharacterRepaint/train_output/003-20250701-11:46_new_dataset/checkpoints/model_epoch_0100.pth \
+    -m /openbayes/home/CharacterRepaint/scripts/dataset_metadata.json \
+    -o results/timestep_test_detailed \
+    -t 350 400 450 500 \
+    -bs 5 \
+    -d cuda
