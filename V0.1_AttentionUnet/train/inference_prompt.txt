@@ -1,0 +1,7 @@
+# 新命令：进行较强力的修复 (例如 t=400)，并生成更详细的可视化
+python inference.py \
+    --input_path "/openbayes/home/CIRI/CIRI_demo/subset2/syth/covered/00692.png" \
+    --checkpoint_path "/openbayes/home/CharacterRepaint/train_output/002-20250630-16:43/checkpoints/model_epoch_0100.pth" \
+    --output_path "inference_output/restored_00002.png" \
+    --start_timestep 350 \
+    --num_vis_steps 20

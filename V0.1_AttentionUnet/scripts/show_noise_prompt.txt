@@ -1,0 +1,6 @@
+python show_noise.py \
+    -m /openbayes/home/CharacterRepaint/scripts/dataset_metadata.json \
+    -o results/forward_process_visualization_detailed \
+    -t 50 150 250 350 500 750 999 \
+    -n 5 \
+    -d cuda

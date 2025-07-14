@@ -1,0 +1,51 @@
+# config.yaml (更新以支持 Attention U-Net)
+dataset:
+  metadata_path: "/openbayes/home/CharacterRepaint/V0.1_AttentionUnet/scripts/CIRI_syth_metadata.json"
+  batch_size: 12
+  num_workers: 2
+
+model_params:
+  # --- 基础 U-Net 参数 (与之前兼容) ---
+  image_size: 288
+  in_channels: 1
+  out_channels: 1 # 对于分类任务，此参数被 num_classes 覆盖，但保留以示兼容
+  model_channels: 64
+  channel_mult: [1, 2, 4, 8] # 定义了U-Net的深度和每层的通道数
+  num_res_blocks: 2
+  groups: 32 # GroupNorm中的组数
+
+  # --- 新增: Attention U-Net 特定参数 ---
+  # 定义在哪些特征图分辨率下应用自注意力机制。
+  # 计算方法: image_size / (2^block_index)
+  # 例如: 288/(2^3)=36, 288/(2^4)=18, 288/(2^5)=9
+  # 对于 channel_mult=[1,2,4,8]，深度为4层，分辨率变化为 288 -> 144 -> 72 -> 36
+  # 如果想在最深的两层加入attention，即36x36和bottleneck之后，可以设置为 [36]
+  # 如果想在72x72和36x36层加入，可以设置为 [72, 36]
+  attention_resolutions: [36, 18] # 推荐在较深层使用，以节省计算资源
+  
+  # 每个注意力头的维度。总维度 = head_dim * num_heads。
+  # `diffusers` 会自动计算头的数量。8 或 16 是常见选择。
+  attention_head_dim: 8
+
+
+diffusion_params:
+  num_timesteps: 1000
+  # beta_start 和 beta_end 在您的代码中未使用，因为您用了固定的 cosine beta schedule
+  # beta_start: 0.0001
+  # beta_end: 0.02
+
+training_params:
+  epochs: 100
+  lr: 0.0001
+  scheduler:
+    name: "StepLR"
+    step_size: 25
+    gamma: 0.35
+  output_dir: "/openbayes/home/CharacterRepaint/V0.1_AttentionUnet/train_output/004-20250709-attentionunet" # 建议为新实验创建新目录
+  save_checkpoint_freq: 10
+  save_visualization_freq: 5
+  device: "cuda"
+
+visualization_params:
+  num_samples_to_visualize: 4
+  start_timestep: 250

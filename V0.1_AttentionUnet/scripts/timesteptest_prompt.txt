@@ -1,0 +1,7 @@
+python test_timesteps.py \
+    -c /openbayes/home/CharacterRepaint/V0.1_AttentionUnet/train_output/004-20250709-attentionunet/checkpoints/model_epoch_0100.pth \
+    -m /openbayes/home/CharacterRepaint/V0.1_AttentionUnet/scripts/dataset_metadata.json \
+    -o results/timestep_test_detailed \
+    -t 350 400 450 500 \
+    -bs 12 \
+    -d cuda

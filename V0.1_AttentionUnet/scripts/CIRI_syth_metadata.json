@@ -1,0 +1,4012 @@
+{
+    "base_noisy_dir": "/openbayes/home/CIRI/CIRI_demo/subset2/syth/covered",
+    "base_clean_dir": "/openbayes/home/CIRI/CIRI_demo/subset2/syth/intact_img",
+    "expected_size": [
+        288,
+        288
+    ],
+    "expected_mode": "L",
+    "image_pairs": [
+        {
+            "filename": "00050.png",
+            "noisy_path_relative": "00050.png",
+            "clean_path_relative": "00050.png"
+        },
+        {
+            "filename": "00132.png",
+            "noisy_path_relative": "00132.png",
+            "clean_path_relative": "00132.png"
+        },
+        {
+            "filename": "00155.png",
+            "noisy_path_relative": "00155.png",
+            "clean_path_relative": "00155.png"
+        },
+        {
+            "filename": "00162.png",
+            "noisy_path_relative": "00162.png",
+            "clean_path_relative": "00162.png"
+        },
+        {
+            "filename": "00186.png",
+            "noisy_path_relative": "00186.png",
+            "clean_path_relative": "00186.png"
+        },
+        {
+            "filename": "00339.png",
+            "noisy_path_relative": "00339.png",
+            "clean_path_relative": "00339.png"
+        },
+        {
+            "filename": "00344.png",
+            "noisy_path_relative": "00344.png",
+            "clean_path_relative": "00344.png"
+        },
+        {
+            "filename": "00363.png",
+            "noisy_path_relative": "00363.png",
+            "clean_path_relative": "00363.png"
+        },
+        {
+            "filename": "00440.png",
+            "noisy_path_relative": "00440.png",
+            "clean_path_relative": "00440.png"
+        },
+        {
+            "filename": "00448.png",
+            "noisy_path_relative": "00448.png",
+            "clean_path_relative": "00448.png"
+        },
+        {
+            "filename": "00471.png",
+            "noisy_path_relative": "00471.png",
+            "clean_path_relative": "00471.png"
+        },
+        {
+            "filename": "00503.png",
+            "noisy_path_relative": "00503.png",
+            "clean_path_relative": "00503.png"
+        },
+        {
+            "filename": "00545.png",
+            "noisy_path_relative": "00545.png",
+            "clean_path_relative": "00545.png"
+        },
+        {
+            "filename": "00579.png",
+            "noisy_path_relative": "00579.png",
+            "clean_path_relative": "00579.png"
+        },
+        {
+            "filename": "00595.png",
+            "noisy_path_relative": "00595.png",
+            "clean_path_relative": "00595.png"
+        },
+        {
+            "filename": "00609.png",
+            "noisy_path_relative": "00609.png",
+            "clean_path_relative": "00609.png"
+        },
+        {
+            "filename": "00671.png",
+            "noisy_path_relative": "00671.png",
+            "clean_path_relative": "00671.png"
+        },
+        {
+            "filename": "00690.png",
+            "noisy_path_relative": "00690.png",
+            "clean_path_relative": "00690.png"
+        },
+        {
+            "filename": "00692.png",
+            "noisy_path_relative": "00692.png",
+            "clean_path_relative": "00692.png"
+        },
+        {
+            "filename": "00693.png",
+            "noisy_path_relative": "00693.png",
+            "clean_path_relative": "00693.png"
+        },
+        {
+            "filename": "00789.png",
+            "noisy_path_relative": "00789.png",
+            "clean_path_relative": "00789.png"
+        },
+        {
+            "filename": "00830.png",
+            "noisy_path_relative": "00830.png",
+            "clean_path_relative": "00830.png"
+        },
+        {
+            "filename": "00867.png",
+            "noisy_path_relative": "00867.png",
+            "clean_path_relative": "00867.png"
+        },
+        {
+            "filename": "00875.png",
+            "noisy_path_relative": "00875.png",
+            "clean_path_relative": "00875.png"
+        },
+        {
+            "filename": "00941.png",
+            "noisy_path_relative": "00941.png",
+            "clean_path_relative": "00941.png"
+        },
+        {
+            "filename": "00972.png",
+            "noisy_path_relative": "00972.png",
+            "clean_path_relative": "00972.png"
+        },
+        {
+            "filename": "01015.png",
+            "noisy_path_relative": "01015.png",
+            "clean_path_relative": "01015.png"
+        },
+        {
+            "filename": "01031.png",
+            "noisy_path_relative": "01031.png",
+            "clean_path_relative": "01031.png"
+        },
+        {
+            "filename": "01040.png",
+            "noisy_path_relative": "01040.png",
+            "clean_path_relative": "01040.png"
+        },
+        {
+            "filename": "01056.png",
+            "noisy_path_relative": "01056.png",
+            "clean_path_relative": "01056.png"
+        },
+        {
+            "filename": "01070.png",
+            "noisy_path_relative": "01070.png",
+            "clean_path_relative": "01070.png"
+        },
+        {
+            "filename": "01079.png",
+            "noisy_path_relative": "01079.png",
+            "clean_path_relative": "01079.png"
+        },
+        {
+            "filename": "01147.png",
+            "noisy_path_relative": "01147.png",
+            "clean_path_relative": "01147.png"
+        },
+        {
+            "filename": "01151.png",
+            "noisy_path_relative": "01151.png",
+            "clean_path_relative": "01151.png"
+        },
+        {
+            "filename": "01187.png",
+            "noisy_path_relative": "01187.png",
+            "clean_path_relative": "01187.png"
+        },
+        {
+            "filename": "01205.png",
+            "noisy_path_relative": "01205.png",
+            "clean_path_relative": "01205.png"
+        },
+        {
+            "filename": "01250.png",
+            "noisy_path_relative": "01250.png",
+            "clean_path_relative": "01250.png"
+        },
+        {
+            "filename": "01255.png",
+            "noisy_path_relative": "01255.png",
+            "clean_path_relative": "01255.png"
+        },
+        {
+            "filename": "01266.png",
+            "noisy_path_relative": "01266.png",
+            "clean_path_relative": "01266.png"
+        },
+        {
+            "filename": "01268.png",
+            "noisy_path_relative": "01268.png",
+            "clean_path_relative": "01268.png"
+        },
+        {
+            "filename": "01291.png",
+            "noisy_path_relative": "01291.png",
+            "clean_path_relative": "01291.png"
+        },
+        {
+            "filename": "01326.png",
+            "noisy_path_relative": "01326.png",
+            "clean_path_relative": "01326.png"
+        },
+        {
+            "filename": "01355.png",
+            "noisy_path_relative": "01355.png",
+            "clean_path_relative": "01355.png"
+        },
+        {
+            "filename": "01411.png",
+            "noisy_path_relative": "01411.png",
+            "clean_path_relative": "01411.png"
+        },
+        {
+            "filename": "01441.png",
+            "noisy_path_relative": "01441.png",
+            "clean_path_relative": "01441.png"
+        },
+        {
+            "filename": "01462.png",
+            "noisy_path_relative": "01462.png",
+            "clean_path_relative": "01462.png"
+        },
+        {
+            "filename": "01474.png",
+            "noisy_path_relative": "01474.png",
+            "clean_path_relative": "01474.png"
+        },
+        {
+            "filename": "01476.png",
+            "noisy_path_relative": "01476.png",
+            "clean_path_relative": "01476.png"
+        },
+        {
+            "filename": "01486.png",
+            "noisy_path_relative": "01486.png",
+            "clean_path_relative": "01486.png"
+        },
+        {
+            "filename": "01510.png",
+            "noisy_path_relative": "01510.png",
+            "clean_path_relative": "01510.png"
+        },
+        {
+            "filename": "01515.png",
+            "noisy_path_relative": "01515.png",
+            "clean_path_relative": "01515.png"
+        },
+        {
+            "filename": "01586.png",
+            "noisy_path_relative": "01586.png",
+            "clean_path_relative": "01586.png"
+        },
+        {
+            "filename": "01599.png",
+            "noisy_path_relative": "01599.png",
+            "clean_path_relative": "01599.png"
+        },
+        {
+            "filename": "01610.png",
+            "noisy_path_relative": "01610.png",
+            "clean_path_relative": "01610.png"
+        },
+        {
+            "filename": "01612.png",
+            "noisy_path_relative": "01612.png",
+            "clean_path_relative": "01612.png"
+        },
+        {
+            "filename": "01626.png",
+            "noisy_path_relative": "01626.png",
+            "clean_path_relative": "01626.png"
+        },
+        {
+            "filename": "01627.png",
+            "noisy_path_relative": "01627.png",
+            "clean_path_relative": "01627.png"
+        },
+        {
+            "filename": "01638.png",
+            "noisy_path_relative": "01638.png",
+            "clean_path_relative": "01638.png"
+        },
+        {
+            "filename": "01641.png",
+            "noisy_path_relative": "01641.png",
+            "clean_path_relative": "01641.png"
+        },
+        {
+            "filename": "01662.png",
+            "noisy_path_relative": "01662.png",
+            "clean_path_relative": "01662.png"
+        },
+        {
+            "filename": "01707.png",
+            "noisy_path_relative": "01707.png",
+            "clean_path_relative": "01707.png"
+        },
+        {
+            "filename": "01764.png",
+            "noisy_path_relative": "01764.png",
+            "clean_path_relative": "01764.png"
+        },
+        {
+            "filename": "01790.png",
+            "noisy_path_relative": "01790.png",
+            "clean_path_relative": "01790.png"
+        },
+        {
+            "filename": "01824.png",
+            "noisy_path_relative": "01824.png",
+            "clean_path_relative": "01824.png"
+        },
+        {
+            "filename": "01856.png",
+            "noisy_path_relative": "01856.png",
+            "clean_path_relative": "01856.png"
+        },
+        {
+            "filename": "01867.png",
+            "noisy_path_relative": "01867.png",
+            "clean_path_relative": "01867.png"
+        },
+        {
+            "filename": "01914.png",
+            "noisy_path_relative": "01914.png",
+            "clean_path_relative": "01914.png"
+        },
+        {
+            "filename": "01927.png",
+            "noisy_path_relative": "01927.png",
+            "clean_path_relative": "01927.png"
+        },
+        {
+            "filename": "01941.png",
+            "noisy_path_relative": "01941.png",
+            "clean_path_relative": "01941.png"
+        },
+        {
+            "filename": "01979.png",
+            "noisy_path_relative": "01979.png",
+            "clean_path_relative": "01979.png"
+        },
+        {
+            "filename": "02016.png",
+            "noisy_path_relative": "02016.png",
+            "clean_path_relative": "02016.png"
+        },
+        {
+            "filename": "02029.png",
+            "noisy_path_relative": "02029.png",
+            "clean_path_relative": "02029.png"
+        },
+        {
+            "filename": "02048.png",
+            "noisy_path_relative": "02048.png",
+            "clean_path_relative": "02048.png"
+        },
+        {
+            "filename": "02066.png",
+            "noisy_path_relative": "02066.png",
+            "clean_path_relative": "02066.png"
+        },
+        {
+            "filename": "02101.png",
+            "noisy_path_relative": "02101.png",
+            "clean_path_relative": "02101.png"
+        },
+        {
+            "filename": "02116.png",
+            "noisy_path_relative": "02116.png",
+            "clean_path_relative": "02116.png"
+        },
+        {
+            "filename": "02121.png",
+            "noisy_path_relative": "02121.png",
+            "clean_path_relative": "02121.png"
+        },
+        {
+            "filename": "02142.png",
+            "noisy_path_relative": "02142.png",
+            "clean_path_relative": "02142.png"
+        },
+        {
+            "filename": "02156.png",
+            "noisy_path_relative": "02156.png",
+            "clean_path_relative": "02156.png"
+        },
+        {
+            "filename": "02184.png",
+            "noisy_path_relative": "02184.png",
+            "clean_path_relative": "02184.png"
+        },
+        {
+            "filename": "02216.png",
+            "noisy_path_relative": "02216.png",
+            "clean_path_relative": "02216.png"
+        },
+        {
+            "filename": "02298.png",
+            "noisy_path_relative": "02298.png",
+            "clean_path_relative": "02298.png"
+        },
+        {
+            "filename": "02311.png",
+            "noisy_path_relative": "02311.png",
+            "clean_path_relative": "02311.png"
+        },
+        {
+            "filename": "02346.png",
+            "noisy_path_relative": "02346.png",
+            "clean_path_relative": "02346.png"
+        },
+        {
+            "filename": "02396.png",
+            "noisy_path_relative": "02396.png",
+            "clean_path_relative": "02396.png"
+        },
+        {
+            "filename": "02427.png",
+            "noisy_path_relative": "02427.png",
+            "clean_path_relative": "02427.png"
+        },
+        {
+            "filename": "02448.png",
+            "noisy_path_relative": "02448.png",
+            "clean_path_relative": "02448.png"
+        },
+        {
+            "filename": "02455.png",
+            "noisy_path_relative": "02455.png",
+            "clean_path_relative": "02455.png"
+        },
+        {
+            "filename": "02459.png",
+            "noisy_path_relative": "02459.png",
+            "clean_path_relative": "02459.png"
+        },
+        {
+            "filename": "02464.png",
+            "noisy_path_relative": "02464.png",
+            "clean_path_relative": "02464.png"
+        },
+        {
+            "filename": "02477.png",
+            "noisy_path_relative": "02477.png",
+            "clean_path_relative": "02477.png"
+        },
+        {
+            "filename": "02496.png",
+            "noisy_path_relative": "02496.png",
+            "clean_path_relative": "02496.png"
+        },
+        {
+            "filename": "02511.png",
+            "noisy_path_relative": "02511.png",
+            "clean_path_relative": "02511.png"
+        },
+        {
+            "filename": "02512.png",
+            "noisy_path_relative": "02512.png",
+            "clean_path_relative": "02512.png"
+        },
+        {
+            "filename": "02528.png",
+            "noisy_path_relative": "02528.png",
+            "clean_path_relative": "02528.png"
+        },
+        {
+            "filename": "02542.png",
+            "noisy_path_relative": "02542.png",
+            "clean_path_relative": "02542.png"
+        },
+        {
+            "filename": "02553.png",
+            "noisy_path_relative": "02553.png",
+            "clean_path_relative": "02553.png"
+        },
+        {
+            "filename": "02571.png",
+            "noisy_path_relative": "02571.png",
+            "clean_path_relative": "02571.png"
+        },
+        {
+            "filename": "02587.png",
+            "noisy_path_relative": "02587.png",
+            "clean_path_relative": "02587.png"
+        },
+        {
+            "filename": "02598.png",
+            "noisy_path_relative": "02598.png",
+            "clean_path_relative": "02598.png"
+        },
+        {
+            "filename": "02601.png",
+            "noisy_path_relative": "02601.png",
+            "clean_path_relative": "02601.png"
+        },
+        {
+            "filename": "02611.png",
+            "noisy_path_relative": "02611.png",
+            "clean_path_relative": "02611.png"
+        },
+        {
+            "filename": "02621.png",
+            "noisy_path_relative": "02621.png",
+            "clean_path_relative": "02621.png"
+        },
+        {
+            "filename": "02662.png",
+            "noisy_path_relative": "02662.png",
+            "clean_path_relative": "02662.png"
+        },
+        {
+            "filename": "02706.png",
+            "noisy_path_relative": "02706.png",
+            "clean_path_relative": "02706.png"
+        },
+        {
+            "filename": "02727.png",
+            "noisy_path_relative": "02727.png",
+            "clean_path_relative": "02727.png"
+        },
+        {
+            "filename": "02731.png",
+            "noisy_path_relative": "02731.png",
+            "clean_path_relative": "02731.png"
+        },
+        {
+            "filename": "02751.png",
+            "noisy_path_relative": "02751.png",
+            "clean_path_relative": "02751.png"
+        },
+        {
+            "filename": "02755.png",
+            "noisy_path_relative": "02755.png",
+            "clean_path_relative": "02755.png"
+        },
+        {
+            "filename": "02766.png",
+            "noisy_path_relative": "02766.png",
+            "clean_path_relative": "02766.png"
+        },
+        {
+            "filename": "02794.png",
+            "noisy_path_relative": "02794.png",
+            "clean_path_relative": "02794.png"
+        },
+        {
+            "filename": "02818.png",
+            "noisy_path_relative": "02818.png",
+            "clean_path_relative": "02818.png"
+        },
+        {
+            "filename": "02861.png",
+            "noisy_path_relative": "02861.png",
+            "clean_path_relative": "02861.png"
+        },
+        {
+            "filename": "02889.png",
+            "noisy_path_relative": "02889.png",
+            "clean_path_relative": "02889.png"
+        },
+        {
+            "filename": "02891.png",
+            "noisy_path_relative": "02891.png",
+            "clean_path_relative": "02891.png"
+        },
+        {
+            "filename": "02910.png",
+            "noisy_path_relative": "02910.png",
+            "clean_path_relative": "02910.png"
+        },
+        {
+            "filename": "02913.png",
+            "noisy_path_relative": "02913.png",
+            "clean_path_relative": "02913.png"
+        },
+        {
+            "filename": "02986.png",
+            "noisy_path_relative": "02986.png",
+            "clean_path_relative": "02986.png"
+        },
+        {
+            "filename": "03027.png",
+            "noisy_path_relative": "03027.png",
+            "clean_path_relative": "03027.png"
+        },
+        {
+            "filename": "03034.png",
+            "noisy_path_relative": "03034.png",
+            "clean_path_relative": "03034.png"
+        },
+        {
+            "filename": "03040.png",
+            "noisy_path_relative": "03040.png",
+            "clean_path_relative": "03040.png"
+        },
+        {
+            "filename": "03054.png",
+            "noisy_path_relative": "03054.png",
+            "clean_path_relative": "03054.png"
+        },
+        {
+            "filename": "03056.png",
+            "noisy_path_relative": "03056.png",
+            "clean_path_relative": "03056.png"
+        },
+        {
+            "filename": "03112.png",
+            "noisy_path_relative": "03112.png",
+            "clean_path_relative": "03112.png"
+        },
+        {
+            "filename": "03113.png",
+            "noisy_path_relative": "03113.png",
+            "clean_path_relative": "03113.png"
+        },
+        {
+            "filename": "03120.png",
+            "noisy_path_relative": "03120.png",
+            "clean_path_relative": "03120.png"
+        },
+        {
+            "filename": "03134.png",
+            "noisy_path_relative": "03134.png",
+            "clean_path_relative": "03134.png"
+        },
+        {
+            "filename": "03137.png",
+            "noisy_path_relative": "03137.png",
+            "clean_path_relative": "03137.png"
+        },
+        {
+            "filename": "03139.png",
+            "noisy_path_relative": "03139.png",
+            "clean_path_relative": "03139.png"
+        },
+        {
+            "filename": "03155.png",
+            "noisy_path_relative": "03155.png",
+            "clean_path_relative": "03155.png"
+        },
+        {
+            "filename": "03206.png",
+            "noisy_path_relative": "03206.png",
+            "clean_path_relative": "03206.png"
+        },
+        {
+            "filename": "03220.png",
+            "noisy_path_relative": "03220.png",
+            "clean_path_relative": "03220.png"
+        },
+        {
+            "filename": "03257.png",
+            "noisy_path_relative": "03257.png",
+            "clean_path_relative": "03257.png"
+        },
+        {
+            "filename": "03271.png",
+            "noisy_path_relative": "03271.png",
+            "clean_path_relative": "03271.png"
+        },
+        {
+            "filename": "03298.png",
+            "noisy_path_relative": "03298.png",
+            "clean_path_relative": "03298.png"
+        },
+        {
+            "filename": "03320.png",
+            "noisy_path_relative": "03320.png",
+            "clean_path_relative": "03320.png"
+        },
+        {
+            "filename": "03340.png",
+            "noisy_path_relative": "03340.png",
+            "clean_path_relative": "03340.png"
+        },
+        {
+            "filename": "03350.png",
+            "noisy_path_relative": "03350.png",
+            "clean_path_relative": "03350.png"
+        },
+        {
+            "filename": "03440.png",
+            "noisy_path_relative": "03440.png",
+            "clean_path_relative": "03440.png"
+        },
+        {
+            "filename": "03469.png",
+            "noisy_path_relative": "03469.png",
+            "clean_path_relative": "03469.png"
+        },
+        {
+            "filename": "03509.png",
+            "noisy_path_relative": "03509.png",
+            "clean_path_relative": "03509.png"
+        },
+        {
+            "filename": "03510.png",
+            "noisy_path_relative": "03510.png",
+            "clean_path_relative": "03510.png"
+        },
+        {
+            "filename": "03547.png",
+            "noisy_path_relative": "03547.png",
+            "clean_path_relative": "03547.png"
+        },
+        {
+            "filename": "03571.png",
+            "noisy_path_relative": "03571.png",
+            "clean_path_relative": "03571.png"
+        },
+        {
+            "filename": "03589.png",
+            "noisy_path_relative": "03589.png",
+            "clean_path_relative": "03589.png"
+        },
+        {
+            "filename": "03722.png",
+            "noisy_path_relative": "03722.png",
+            "clean_path_relative": "03722.png"
+        },
+        {
+            "filename": "03727.png",
+            "noisy_path_relative": "03727.png",
+            "clean_path_relative": "03727.png"
+        },
+        {
+            "filename": "03766.png",
+            "noisy_path_relative": "03766.png",
+            "clean_path_relative": "03766.png"
+        },
+        {
+            "filename": "03768.png",
+            "noisy_path_relative": "03768.png",
+            "clean_path_relative": "03768.png"
+        },
+        {
+            "filename": "03798.png",
+            "noisy_path_relative": "03798.png",
+            "clean_path_relative": "03798.png"
+        },
+        {
+            "filename": "03799.png",
+            "noisy_path_relative": "03799.png",
+            "clean_path_relative": "03799.png"
+        },
+        {
+            "filename": "03806.png",
+            "noisy_path_relative": "03806.png",
+            "clean_path_relative": "03806.png"
+        },
+        {
+            "filename": "03813.png",
+            "noisy_path_relative": "03813.png",
+            "clean_path_relative": "03813.png"
+        },
+        {
+            "filename": "03818.png",
+            "noisy_path_relative": "03818.png",
+            "clean_path_relative": "03818.png"
+        },
+        {
+            "filename": "03831.png",
+            "noisy_path_relative": "03831.png",
+            "clean_path_relative": "03831.png"
+        },
+        {
+            "filename": "03832.png",
+            "noisy_path_relative": "03832.png",
+            "clean_path_relative": "03832.png"
+        },
+        {
+            "filename": "03865.png",
+            "noisy_path_relative": "03865.png",
+            "clean_path_relative": "03865.png"
+        },
+        {
+            "filename": "03874.png",
+            "noisy_path_relative": "03874.png",
+            "clean_path_relative": "03874.png"
+        },
+        {
+            "filename": "03884.png",
+            "noisy_path_relative": "03884.png",
+            "clean_path_relative": "03884.png"
+        },
+        {
+            "filename": "03894.png",
+            "noisy_path_relative": "03894.png",
+            "clean_path_relative": "03894.png"
+        },
+        {
+            "filename": "03964.png",
+            "noisy_path_relative": "03964.png",
+            "clean_path_relative": "03964.png"
+        },
+        {
+            "filename": "03967.png",
+            "noisy_path_relative": "03967.png",
+            "clean_path_relative": "03967.png"
+        },
+        {
+            "filename": "03982.png",
+            "noisy_path_relative": "03982.png",
+            "clean_path_relative": "03982.png"
+        },
+        {
+            "filename": "03994.png",
+            "noisy_path_relative": "03994.png",
+            "clean_path_relative": "03994.png"
+        },
+        {
+            "filename": "04004.png",
+            "noisy_path_relative": "04004.png",
+            "clean_path_relative": "04004.png"
+        },
+        {
+            "filename": "04052.png",
+            "noisy_path_relative": "04052.png",
+            "clean_path_relative": "04052.png"
+        },
+        {
+            "filename": "04066.png",
+            "noisy_path_relative": "04066.png",
+            "clean_path_relative": "04066.png"
+        },
+        {
+            "filename": "04101.png",
+            "noisy_path_relative": "04101.png",
+            "clean_path_relative": "04101.png"
+        },
+        {
+            "filename": "04125.png",
+            "noisy_path_relative": "04125.png",
+            "clean_path_relative": "04125.png"
+        },
+        {
+            "filename": "04136.png",
+            "noisy_path_relative": "04136.png",
+            "clean_path_relative": "04136.png"
+        },
+        {
+            "filename": "04145.png",
+            "noisy_path_relative": "04145.png",
+            "clean_path_relative": "04145.png"
+        },
+        {
+            "filename": "04162.png",
+            "noisy_path_relative": "04162.png",
+            "clean_path_relative": "04162.png"
+        },
+        {
+            "filename": "04199.png",
+            "noisy_path_relative": "04199.png",
+            "clean_path_relative": "04199.png"
+        },
+        {
+            "filename": "04222.png",
+            "noisy_path_relative": "04222.png",
+            "clean_path_relative": "04222.png"
+        },
+        {
+            "filename": "04264.png",
+            "noisy_path_relative": "04264.png",
+            "clean_path_relative": "04264.png"
+        },
+        {
+            "filename": "04278.png",
+            "noisy_path_relative": "04278.png",
+            "clean_path_relative": "04278.png"
+        },
+        {
+            "filename": "04291.png",
+            "noisy_path_relative": "04291.png",
+            "clean_path_relative": "04291.png"
+        },
+        {
+            "filename": "04301.png",
+            "noisy_path_relative": "04301.png",
+            "clean_path_relative": "04301.png"
+        },
+        {
+            "filename": "04342.png",
+            "noisy_path_relative": "04342.png",
+            "clean_path_relative": "04342.png"
+        },
+        {
+            "filename": "04411.png",
+            "noisy_path_relative": "04411.png",
+            "clean_path_relative": "04411.png"
+        },
+        {
+            "filename": "04513.png",
+            "noisy_path_relative": "04513.png",
+            "clean_path_relative": "04513.png"
+        },
+        {
+            "filename": "04514.png",
+            "noisy_path_relative": "04514.png",
+            "clean_path_relative": "04514.png"
+        },
+        {
+            "filename": "04561.png",
+            "noisy_path_relative": "04561.png",
+            "clean_path_relative": "04561.png"
+        },
+        {
+            "filename": "04567.png",
+            "noisy_path_relative": "04567.png",
+            "clean_path_relative": "04567.png"
+        },
+        {
+            "filename": "04572.png",
+            "noisy_path_relative": "04572.png",
+            "clean_path_relative": "04572.png"
+        },
+        {
+            "filename": "04598.png",
+            "noisy_path_relative": "04598.png",
+            "clean_path_relative": "04598.png"
+        },
+        {
+            "filename": "04721.png",
+            "noisy_path_relative": "04721.png",
+            "clean_path_relative": "04721.png"
+        },
+        {
+            "filename": "04761.png",
+            "noisy_path_relative": "04761.png",
+            "clean_path_relative": "04761.png"
+        },
+        {
+            "filename": "04777.png",
+            "noisy_path_relative": "04777.png",
+            "clean_path_relative": "04777.png"
+        },
+        {
+            "filename": "04786.png",
+            "noisy_path_relative": "04786.png",
+            "clean_path_relative": "04786.png"
+        },
+        {
+            "filename": "04805.png",
+            "noisy_path_relative": "04805.png",
+            "clean_path_relative": "04805.png"
+        },
+        {
+            "filename": "04837.png",
+            "noisy_path_relative": "04837.png",
+            "clean_path_relative": "04837.png"
+        },
+        {
+            "filename": "04906.png",
+            "noisy_path_relative": "04906.png",
+            "clean_path_relative": "04906.png"
+        },
+        {
+            "filename": "04910.png",
+            "noisy_path_relative": "04910.png",
+            "clean_path_relative": "04910.png"
+        },
+        {
+            "filename": "04914.png",
+            "noisy_path_relative": "04914.png",
+            "clean_path_relative": "04914.png"
+        },
+        {
+            "filename": "04915.png",
+            "noisy_path_relative": "04915.png",
+            "clean_path_relative": "04915.png"
+        },
+        {
+            "filename": "04928.png",
+            "noisy_path_relative": "04928.png",
+            "clean_path_relative": "04928.png"
+        },
+        {
+            "filename": "04952.png",
+            "noisy_path_relative": "04952.png",
+            "clean_path_relative": "04952.png"
+        },
+        {
+            "filename": "04959.png",
+            "noisy_path_relative": "04959.png",
+            "clean_path_relative": "04959.png"
+        },
+        {
+            "filename": "04960.png",
+            "noisy_path_relative": "04960.png",
+            "clean_path_relative": "04960.png"
+        },
+        {
+            "filename": "04973.png",
+            "noisy_path_relative": "04973.png",
+            "clean_path_relative": "04973.png"
+        },
+        {
+            "filename": "04994.png",
+            "noisy_path_relative": "04994.png",
+            "clean_path_relative": "04994.png"
+        },
+        {
+            "filename": "05025.png",
+            "noisy_path_relative": "05025.png",
+            "clean_path_relative": "05025.png"
+        },
+        {
+            "filename": "05048.png",
+            "noisy_path_relative": "05048.png",
+            "clean_path_relative": "05048.png"
+        },
+        {
+            "filename": "05051.png",
+            "noisy_path_relative": "05051.png",
+            "clean_path_relative": "05051.png"
+        },
+        {
+            "filename": "05066.png",
+            "noisy_path_relative": "05066.png",
+            "clean_path_relative": "05066.png"
+        },
+        {
+            "filename": "05074.png",
+            "noisy_path_relative": "05074.png",
+            "clean_path_relative": "05074.png"
+        },
+        {
+            "filename": "05159.png",
+            "noisy_path_relative": "05159.png",
+            "clean_path_relative": "05159.png"
+        },
+        {
+            "filename": "05161.png",
+            "noisy_path_relative": "05161.png",
+            "clean_path_relative": "05161.png"
+        },
+        {
+            "filename": "05191.png",
+            "noisy_path_relative": "05191.png",
+            "clean_path_relative": "05191.png"
+        },
+        {
+            "filename": "05301.png",
+            "noisy_path_relative": "05301.png",
+            "clean_path_relative": "05301.png"
+        },
+        {
+            "filename": "05309.png",
+            "noisy_path_relative": "05309.png",
+            "clean_path_relative": "05309.png"
+        },
+        {
+            "filename": "05371.png",
+            "noisy_path_relative": "05371.png",
+            "clean_path_relative": "05371.png"
+        },
+        {
+            "filename": "05386.png",
+            "noisy_path_relative": "05386.png",
+            "clean_path_relative": "05386.png"
+        },
+        {
+            "filename": "05401.png",
+            "noisy_path_relative": "05401.png",
+            "clean_path_relative": "05401.png"
+        },
+        {
+            "filename": "05423.png",
+            "noisy_path_relative": "05423.png",
+            "clean_path_relative": "05423.png"
+        },
+        {
+            "filename": "05434.png",
+            "noisy_path_relative": "05434.png",
+            "clean_path_relative": "05434.png"
+        },
+        {
+            "filename": "05451.png",
+            "noisy_path_relative": "05451.png",
+            "clean_path_relative": "05451.png"
+        },
+        {
+            "filename": "05455.png",
+            "noisy_path_relative": "05455.png",
+            "clean_path_relative": "05455.png"
+        },
+        {
+            "filename": "05497.png",
+            "noisy_path_relative": "05497.png",
+            "clean_path_relative": "05497.png"
+        },
+        {
+            "filename": "05501.png",
+            "noisy_path_relative": "05501.png",
+            "clean_path_relative": "05501.png"
+        },
+        {
+            "filename": "05525.png",
+            "noisy_path_relative": "05525.png",
+            "clean_path_relative": "05525.png"
+        },
+        {
+            "filename": "05528.png",
+            "noisy_path_relative": "05528.png",
+            "clean_path_relative": "05528.png"
+        },
+        {
+            "filename": "05587.png",
+            "noisy_path_relative": "05587.png",
+            "clean_path_relative": "05587.png"
+        },
+        {
+            "filename": "05696.png",
+            "noisy_path_relative": "05696.png",
+            "clean_path_relative": "05696.png"
+        },
+        {
+            "filename": "05701.png",
+            "noisy_path_relative": "05701.png",
+            "clean_path_relative": "05701.png"
+        },
+        {
+            "filename": "05757.png",
+            "noisy_path_relative": "05757.png",
+            "clean_path_relative": "05757.png"
+        },
+        {
+            "filename": "05792.png",
+            "noisy_path_relative": "05792.png",
+            "clean_path_relative": "05792.png"
+        },
+        {
+            "filename": "05807.png",
+            "noisy_path_relative": "05807.png",
+            "clean_path_relative": "05807.png"
+        },
+        {
+            "filename": "05840.png",
+            "noisy_path_relative": "05840.png",
+            "clean_path_relative": "05840.png"
+        },
+        {
+            "filename": "05842.png",
+            "noisy_path_relative": "05842.png",
+            "clean_path_relative": "05842.png"
+        },
+        {
+            "filename": "05844.png",
+            "noisy_path_relative": "05844.png",
+            "clean_path_relative": "05844.png"
+        },
+        {
+            "filename": "05875.png",
+            "noisy_path_relative": "05875.png",
+            "clean_path_relative": "05875.png"
+        },
+        {
+            "filename": "05897.png",
+            "noisy_path_relative": "05897.png",
+            "clean_path_relative": "05897.png"
+        },
+        {
+            "filename": "05946.png",
+            "noisy_path_relative": "05946.png",
+            "clean_path_relative": "05946.png"
+        },
+        {
+            "filename": "06004.png",
+            "noisy_path_relative": "06004.png",
+            "clean_path_relative": "06004.png"
+        },
+        {
+            "filename": "06041.png",
+            "noisy_path_relative": "06041.png",
+            "clean_path_relative": "06041.png"
+        },
+        {
+            "filename": "06094.png",
+            "noisy_path_relative": "06094.png",
+            "clean_path_relative": "06094.png"
+        },
+        {
+            "filename": "06110.png",
+            "noisy_path_relative": "06110.png",
+            "clean_path_relative": "06110.png"
+        },
+        {
+            "filename": "06112.png",
+            "noisy_path_relative": "06112.png",
+            "clean_path_relative": "06112.png"
+        },
+        {
+            "filename": "06118.png",
+            "noisy_path_relative": "06118.png",
+            "clean_path_relative": "06118.png"
+        },
+        {
+            "filename": "06175.png",
+            "noisy_path_relative": "06175.png",
+            "clean_path_relative": "06175.png"
+        },
+        {
+            "filename": "06193.png",
+            "noisy_path_relative": "06193.png",
+            "clean_path_relative": "06193.png"
+        },
+        {
+            "filename": "06234.png",
+            "noisy_path_relative": "06234.png",
+            "clean_path_relative": "06234.png"
+        },
+        {
+            "filename": "06271.png",
+            "noisy_path_relative": "06271.png",
+            "clean_path_relative": "06271.png"
+        },
+        {
+            "filename": "06286.png",
+            "noisy_path_relative": "06286.png",
+            "clean_path_relative": "06286.png"
+        },
+        {
+            "filename": "06294.png",
+            "noisy_path_relative": "06294.png",
+            "clean_path_relative": "06294.png"
+        },
+        {
+            "filename": "06301.png",
+            "noisy_path_relative": "06301.png",
+            "clean_path_relative": "06301.png"
+        },
+        {
+            "filename": "06343.png",
+            "noisy_path_relative": "06343.png",
+            "clean_path_relative": "06343.png"
+        },
+        {
+            "filename": "06377.png",
+            "noisy_path_relative": "06377.png",
+            "clean_path_relative": "06377.png"
+        },
+        {
+            "filename": "06382.png",
+            "noisy_path_relative": "06382.png",
+            "clean_path_relative": "06382.png"
+        },
+        {
+            "filename": "06414.png",
+            "noisy_path_relative": "06414.png",
+            "clean_path_relative": "06414.png"
+        },
+        {
+            "filename": "06431.png",
+            "noisy_path_relative": "06431.png",
+            "clean_path_relative": "06431.png"
+        },
+        {
+            "filename": "06437.png",
+            "noisy_path_relative": "06437.png",
+            "clean_path_relative": "06437.png"
+        },
+        {
+            "filename": "06479.png",
+            "noisy_path_relative": "06479.png",
+            "clean_path_relative": "06479.png"
+        },
+        {
+            "filename": "06497.png",
+            "noisy_path_relative": "06497.png",
+            "clean_path_relative": "06497.png"
+        },
+        {
+            "filename": "06547.png",
+            "noisy_path_relative": "06547.png",
+            "clean_path_relative": "06547.png"
+        },
+        {
+            "filename": "06577.png",
+            "noisy_path_relative": "06577.png",
+            "clean_path_relative": "06577.png"
+        },
+        {
+            "filename": "06594.png",
+            "noisy_path_relative": "06594.png",
+            "clean_path_relative": "06594.png"
+        },
+        {
+            "filename": "06676.png",
+            "noisy_path_relative": "06676.png",
+            "clean_path_relative": "06676.png"
+        },
+        {
+            "filename": "06683.png",
+            "noisy_path_relative": "06683.png",
+            "clean_path_relative": "06683.png"
+        },
+        {
+            "filename": "06735.png",
+            "noisy_path_relative": "06735.png",
+            "clean_path_relative": "06735.png"
+        },
+        {
+            "filename": "06742.png",
+            "noisy_path_relative": "06742.png",
+            "clean_path_relative": "06742.png"
+        },
+        {
+            "filename": "06761.png",
+            "noisy_path_relative": "06761.png",
+            "clean_path_relative": "06761.png"
+        },
+        {
+            "filename": "06775.png",
+            "noisy_path_relative": "06775.png",
+            "clean_path_relative": "06775.png"
+        },
+        {
+            "filename": "06795.png",
+            "noisy_path_relative": "06795.png",
+            "clean_path_relative": "06795.png"
+        },
+        {
+            "filename": "06821.png",
+            "noisy_path_relative": "06821.png",
+            "clean_path_relative": "06821.png"
+        },
+        {
+            "filename": "06845.png",
+            "noisy_path_relative": "06845.png",
+            "clean_path_relative": "06845.png"
+        },
+        {
+            "filename": "06850.png",
+            "noisy_path_relative": "06850.png",
+            "clean_path_relative": "06850.png"
+        },
+        {
+            "filename": "06854.png",
+            "noisy_path_relative": "06854.png",
+            "clean_path_relative": "06854.png"
+        },
+        {
+            "filename": "06910.png",
+            "noisy_path_relative": "06910.png",
+            "clean_path_relative": "06910.png"
+        },
+        {
+            "filename": "06948.png",
+            "noisy_path_relative": "06948.png",
+            "clean_path_relative": "06948.png"
+        },
+        {
+            "filename": "07012.png",
+            "noisy_path_relative": "07012.png",
+            "clean_path_relative": "07012.png"
+        },
+        {
+            "filename": "07063.png",
+            "noisy_path_relative": "07063.png",
+            "clean_path_relative": "07063.png"
+        },
+        {
+            "filename": "07075.png",
+            "noisy_path_relative": "07075.png",
+            "clean_path_relative": "07075.png"
+        },
+        {
+            "filename": "07087.png",
+            "noisy_path_relative": "07087.png",
+            "clean_path_relative": "07087.png"
+        },
+        {
+            "filename": "07123.png",
+            "noisy_path_relative": "07123.png",
+            "clean_path_relative": "07123.png"
+        },
+        {
+            "filename": "07139.png",
+            "noisy_path_relative": "07139.png",
+            "clean_path_relative": "07139.png"
+        },
+        {
+            "filename": "07148.png",
+            "noisy_path_relative": "07148.png",
+            "clean_path_relative": "07148.png"
+        },
+        {
+            "filename": "07171.png",
+            "noisy_path_relative": "07171.png",
+            "clean_path_relative": "07171.png"
+        },
+        {
+            "filename": "07204.png",
+            "noisy_path_relative": "07204.png",
+            "clean_path_relative": "07204.png"
+        },
+        {
+            "filename": "07245.png",
+            "noisy_path_relative": "07245.png",
+            "clean_path_relative": "07245.png"
+        },
+        {
+            "filename": "07343.png",
+            "noisy_path_relative": "07343.png",
+            "clean_path_relative": "07343.png"
+        },
+        {
+            "filename": "07349.png",
+            "noisy_path_relative": "07349.png",
+            "clean_path_relative": "07349.png"
+        },
+        {
+            "filename": "07354.png",
+            "noisy_path_relative": "07354.png",
+            "clean_path_relative": "07354.png"
+        },
+        {
+            "filename": "07372.png",
+            "noisy_path_relative": "07372.png",
+            "clean_path_relative": "07372.png"
+        },
+        {
+            "filename": "07376.png",
+            "noisy_path_relative": "07376.png",
+            "clean_path_relative": "07376.png"
+        },
+        {
+            "filename": "07377.png",
+            "noisy_path_relative": "07377.png",
+            "clean_path_relative": "07377.png"
+        },
+        {
+            "filename": "07378.png",
+            "noisy_path_relative": "07378.png",
+            "clean_path_relative": "07378.png"
+        },
+        {
+            "filename": "07379.png",
+            "noisy_path_relative": "07379.png",
+            "clean_path_relative": "07379.png"
+        },
+        {
+            "filename": "07384.png",
+            "noisy_path_relative": "07384.png",
+            "clean_path_relative": "07384.png"
+        },
+        {
+            "filename": "07395.png",
+            "noisy_path_relative": "07395.png",
+            "clean_path_relative": "07395.png"
+        },
+        {
+            "filename": "07397.png",
+            "noisy_path_relative": "07397.png",
+            "clean_path_relative": "07397.png"
+        },
+        {
+            "filename": "07417.png",
+            "noisy_path_relative": "07417.png",
+            "clean_path_relative": "07417.png"
+        },
+        {
+            "filename": "07426.png",
+            "noisy_path_relative": "07426.png",
+            "clean_path_relative": "07426.png"
+        },
+        {
+            "filename": "07430.png",
+            "noisy_path_relative": "07430.png",
+            "clean_path_relative": "07430.png"
+        },
+        {
+            "filename": "07456.png",
+            "noisy_path_relative": "07456.png",
+            "clean_path_relative": "07456.png"
+        },
+        {
+            "filename": "07486.png",
+            "noisy_path_relative": "07486.png",
+            "clean_path_relative": "07486.png"
+        },
+        {
+            "filename": "07510.png",
+            "noisy_path_relative": "07510.png",
+            "clean_path_relative": "07510.png"
+        },
+        {
+            "filename": "07515.png",
+            "noisy_path_relative": "07515.png",
+            "clean_path_relative": "07515.png"
+        },
+        {
+            "filename": "07535.png",
+            "noisy_path_relative": "07535.png",
+            "clean_path_relative": "07535.png"
+        },
+        {
+            "filename": "07544.png",
+            "noisy_path_relative": "07544.png",
+            "clean_path_relative": "07544.png"
+        },
+        {
+            "filename": "07594.png",
+            "noisy_path_relative": "07594.png",
+            "clean_path_relative": "07594.png"
+        },
+        {
+            "filename": "07596.png",
+            "noisy_path_relative": "07596.png",
+            "clean_path_relative": "07596.png"
+        },
+        {
+            "filename": "07601.png",
+            "noisy_path_relative": "07601.png",
+            "clean_path_relative": "07601.png"
+        },
+        {
+            "filename": "07634.png",
+            "noisy_path_relative": "07634.png",
+            "clean_path_relative": "07634.png"
+        },
+        {
+            "filename": "07646.png",
+            "noisy_path_relative": "07646.png",
+            "clean_path_relative": "07646.png"
+        },
+        {
+            "filename": "07649.png",
+            "noisy_path_relative": "07649.png",
+            "clean_path_relative": "07649.png"
+        },
+        {
+            "filename": "07686.png",
+            "noisy_path_relative": "07686.png",
+            "clean_path_relative": "07686.png"
+        },
+        {
+            "filename": "07694.png",
+            "noisy_path_relative": "07694.png",
+            "clean_path_relative": "07694.png"
+        },
+        {
+            "filename": "07739.png",
+            "noisy_path_relative": "07739.png",
+            "clean_path_relative": "07739.png"
+        },
+        {
+            "filename": "07832.png",
+            "noisy_path_relative": "07832.png",
+            "clean_path_relative": "07832.png"
+        },
+        {
+            "filename": "07835.png",
+            "noisy_path_relative": "07835.png",
+            "clean_path_relative": "07835.png"
+        },
+        {
+            "filename": "07851.png",
+            "noisy_path_relative": "07851.png",
+            "clean_path_relative": "07851.png"
+        },
+        {
+            "filename": "07854.png",
+            "noisy_path_relative": "07854.png",
+            "clean_path_relative": "07854.png"
+        },
+        {
+            "filename": "07872.png",
+            "noisy_path_relative": "07872.png",
+            "clean_path_relative": "07872.png"
+        },
+        {
+            "filename": "07877.png",
+            "noisy_path_relative": "07877.png",
+            "clean_path_relative": "07877.png"
+        },
+        {
+            "filename": "07883.png",
+            "noisy_path_relative": "07883.png",
+            "clean_path_relative": "07883.png"
+        },
+        {
+            "filename": "07920.png",
+            "noisy_path_relative": "07920.png",
+            "clean_path_relative": "07920.png"
+        },
+        {
+            "filename": "07939.png",
+            "noisy_path_relative": "07939.png",
+            "clean_path_relative": "07939.png"
+        },
+        {
+            "filename": "07976.png",
+            "noisy_path_relative": "07976.png",
+            "clean_path_relative": "07976.png"
+        },
+        {
+            "filename": "07993.png",
+            "noisy_path_relative": "07993.png",
+            "clean_path_relative": "07993.png"
+        },
+        {
+            "filename": "08009.png",
+            "noisy_path_relative": "08009.png",
+            "clean_path_relative": "08009.png"
+        },
+        {
+            "filename": "08011.png",
+            "noisy_path_relative": "08011.png",
+            "clean_path_relative": "08011.png"
+        },
+        {
+            "filename": "08046.png",
+            "noisy_path_relative": "08046.png",
+            "clean_path_relative": "08046.png"
+        },
+        {
+            "filename": "08074.png",
+            "noisy_path_relative": "08074.png",
+            "clean_path_relative": "08074.png"
+        },
+        {
+            "filename": "08080.png",
+            "noisy_path_relative": "08080.png",
+            "clean_path_relative": "08080.png"
+        },
+        {
+            "filename": "08088.png",
+            "noisy_path_relative": "08088.png",
+            "clean_path_relative": "08088.png"
+        },
+        {
+            "filename": "08130.png",
+            "noisy_path_relative": "08130.png",
+            "clean_path_relative": "08130.png"
+        },
+        {
+            "filename": "08141.png",
+            "noisy_path_relative": "08141.png",
+            "clean_path_relative": "08141.png"
+        },
+        {
+            "filename": "08143.png",
+            "noisy_path_relative": "08143.png",
+            "clean_path_relative": "08143.png"
+        },
+        {
+            "filename": "08150.png",
+            "noisy_path_relative": "08150.png",
+            "clean_path_relative": "08150.png"
+        },
+        {
+            "filename": "08151.png",
+            "noisy_path_relative": "08151.png",
+            "clean_path_relative": "08151.png"
+        },
+        {
+            "filename": "08170.png",
+            "noisy_path_relative": "08170.png",
+            "clean_path_relative": "08170.png"
+        },
+        {
+            "filename": "08173.png",
+            "noisy_path_relative": "08173.png",
+            "clean_path_relative": "08173.png"
+        },
+        {
+            "filename": "08177.png",
+            "noisy_path_relative": "08177.png",
+            "clean_path_relative": "08177.png"
+        },
+        {
+            "filename": "08184.png",
+            "noisy_path_relative": "08184.png",
+            "clean_path_relative": "08184.png"
+        },
+        {
+            "filename": "08199.png",
+            "noisy_path_relative": "08199.png",
+            "clean_path_relative": "08199.png"
+        },
+        {
+            "filename": "08211.png",
+            "noisy_path_relative": "08211.png",
+            "clean_path_relative": "08211.png"
+        },
+        {
+            "filename": "08217.png",
+            "noisy_path_relative": "08217.png",
+            "clean_path_relative": "08217.png"
+        },
+        {
+            "filename": "08232.png",
+            "noisy_path_relative": "08232.png",
+            "clean_path_relative": "08232.png"
+        },
+        {
+            "filename": "08266.png",
+            "noisy_path_relative": "08266.png",
+            "clean_path_relative": "08266.png"
+        },
+        {
+            "filename": "08268.png",
+            "noisy_path_relative": "08268.png",
+            "clean_path_relative": "08268.png"
+        },
+        {
+            "filename": "08309.png",
+            "noisy_path_relative": "08309.png",
+            "clean_path_relative": "08309.png"
+        },
+        {
+            "filename": "08313.png",
+            "noisy_path_relative": "08313.png",
+            "clean_path_relative": "08313.png"
+        },
+        {
+            "filename": "08321.png",
+            "noisy_path_relative": "08321.png",
+            "clean_path_relative": "08321.png"
+        },
+        {
+            "filename": "08338.png",
+            "noisy_path_relative": "08338.png",
+            "clean_path_relative": "08338.png"
+        },
+        {
+            "filename": "08347.png",
+            "noisy_path_relative": "08347.png",
+            "clean_path_relative": "08347.png"
+        },
+        {
+            "filename": "08359.png",
+            "noisy_path_relative": "08359.png",
+            "clean_path_relative": "08359.png"
+        },
+        {
+            "filename": "08403.png",
+            "noisy_path_relative": "08403.png",
+            "clean_path_relative": "08403.png"
+        },
+        {
+            "filename": "08447.png",
+            "noisy_path_relative": "08447.png",
+            "clean_path_relative": "08447.png"
+        },
+        {
+            "filename": "08529.png",
+            "noisy_path_relative": "08529.png",
+            "clean_path_relative": "08529.png"
+        },
+        {
+            "filename": "08539.png",
+            "noisy_path_relative": "08539.png",
+            "clean_path_relative": "08539.png"
+        },
+        {
+            "filename": "08557.png",
+            "noisy_path_relative": "08557.png",
+            "clean_path_relative": "08557.png"
+        },
+        {
+            "filename": "08558.png",
+            "noisy_path_relative": "08558.png",
+            "clean_path_relative": "08558.png"
+        },
+        {
+            "filename": "08613.png",
+            "noisy_path_relative": "08613.png",
+            "clean_path_relative": "08613.png"
+        },
+        {
+            "filename": "08616.png",
+            "noisy_path_relative": "08616.png",
+            "clean_path_relative": "08616.png"
+        },
+        {
+            "filename": "08630.png",
+            "noisy_path_relative": "08630.png",
+            "clean_path_relative": "08630.png"
+        },
+        {
+            "filename": "08647.png",
+            "noisy_path_relative": "08647.png",
+            "clean_path_relative": "08647.png"
+        },
+        {
+            "filename": "08681.png",
+            "noisy_path_relative": "08681.png",
+            "clean_path_relative": "08681.png"
+        },
+        {
+            "filename": "08742.png",
+            "noisy_path_relative": "08742.png",
+            "clean_path_relative": "08742.png"
+        },
+        {
+            "filename": "08765.png",
+            "noisy_path_relative": "08765.png",
+            "clean_path_relative": "08765.png"
+        },
+        {
+            "filename": "08769.png",
+            "noisy_path_relative": "08769.png",
+            "clean_path_relative": "08769.png"
+        },
+        {
+            "filename": "08910.png",
+            "noisy_path_relative": "08910.png",
+            "clean_path_relative": "08910.png"
+        },
+        {
+            "filename": "08919.png",
+            "noisy_path_relative": "08919.png",
+            "clean_path_relative": "08919.png"
+        },
+        {
+            "filename": "08932.png",
+            "noisy_path_relative": "08932.png",
+            "clean_path_relative": "08932.png"
+        },
+        {
+            "filename": "08967.png",
+            "noisy_path_relative": "08967.png",
+            "clean_path_relative": "08967.png"
+        },
+        {
+            "filename": "08982.png",
+            "noisy_path_relative": "08982.png",
+            "clean_path_relative": "08982.png"
+        },
+        {
+            "filename": "08983.png",
+            "noisy_path_relative": "08983.png",
+            "clean_path_relative": "08983.png"
+        },
+        {
+            "filename": "08987.png",
+            "noisy_path_relative": "08987.png",
+            "clean_path_relative": "08987.png"
+        },
+        {
+            "filename": "09025.png",
+            "noisy_path_relative": "09025.png",
+            "clean_path_relative": "09025.png"
+        },
+        {
+            "filename": "09053.png",
+            "noisy_path_relative": "09053.png",
+            "clean_path_relative": "09053.png"
+        },
+        {
+            "filename": "09168.png",
+            "noisy_path_relative": "09168.png",
+            "clean_path_relative": "09168.png"
+        },
+        {
+            "filename": "09193.png",
+            "noisy_path_relative": "09193.png",
+            "clean_path_relative": "09193.png"
+        },
+        {
+            "filename": "09204.png",
+            "noisy_path_relative": "09204.png",
+            "clean_path_relative": "09204.png"
+        },
+        {
+            "filename": "09224.png",
+            "noisy_path_relative": "09224.png",
+            "clean_path_relative": "09224.png"
+        },
+        {
+            "filename": "09235.png",
+            "noisy_path_relative": "09235.png",
+            "clean_path_relative": "09235.png"
+        },
+        {
+            "filename": "09264.png",
+            "noisy_path_relative": "09264.png",
+            "clean_path_relative": "09264.png"
+        },
+        {
+            "filename": "09329.png",
+            "noisy_path_relative": "09329.png",
+            "clean_path_relative": "09329.png"
+        },
+        {
+            "filename": "09353.png",
+            "noisy_path_relative": "09353.png",
+            "clean_path_relative": "09353.png"
+        },
+        {
+            "filename": "09358.png",
+            "noisy_path_relative": "09358.png",
+            "clean_path_relative": "09358.png"
+        },
+        {
+            "filename": "09374.png",
+            "noisy_path_relative": "09374.png",
+            "clean_path_relative": "09374.png"
+        },
+        {
+            "filename": "09378.png",
+            "noisy_path_relative": "09378.png",
+            "clean_path_relative": "09378.png"
+        },
+        {
+            "filename": "09393.png",
+            "noisy_path_relative": "09393.png",
+            "clean_path_relative": "09393.png"
+        },
+        {
+            "filename": "09420.png",
+            "noisy_path_relative": "09420.png",
+            "clean_path_relative": "09420.png"
+        },
+        {
+            "filename": "09433.png",
+            "noisy_path_relative": "09433.png",
+            "clean_path_relative": "09433.png"
+        },
+        {
+            "filename": "09459.png",
+            "noisy_path_relative": "09459.png",
+            "clean_path_relative": "09459.png"
+        },
+        {
+            "filename": "09519.png",
+            "noisy_path_relative": "09519.png",
+            "clean_path_relative": "09519.png"
+        },
+        {
+            "filename": "09531.png",
+            "noisy_path_relative": "09531.png",
+            "clean_path_relative": "09531.png"
+        },
+        {
+            "filename": "09532.png",
+            "noisy_path_relative": "09532.png",
+            "clean_path_relative": "09532.png"
+        },
+        {
+            "filename": "09568.png",
+            "noisy_path_relative": "09568.png",
+            "clean_path_relative": "09568.png"
+        },
+        {
+            "filename": "09588.png",
+            "noisy_path_relative": "09588.png",
+            "clean_path_relative": "09588.png"
+        },
+        {
+            "filename": "09626.png",
+            "noisy_path_relative": "09626.png",
+            "clean_path_relative": "09626.png"
+        },
+        {
+            "filename": "09662.png",
+            "noisy_path_relative": "09662.png",
+            "clean_path_relative": "09662.png"
+        },
+        {
+            "filename": "09713.png",
+            "noisy_path_relative": "09713.png",
+            "clean_path_relative": "09713.png"
+        },
+        {
+            "filename": "09790.png",
+            "noisy_path_relative": "09790.png",
+            "clean_path_relative": "09790.png"
+        },
+        {
+            "filename": "09808.png",
+            "noisy_path_relative": "09808.png",
+            "clean_path_relative": "09808.png"
+        },
+        {
+            "filename": "09828.png",
+            "noisy_path_relative": "09828.png",
+            "clean_path_relative": "09828.png"
+        },
+        {
+            "filename": "09851.png",
+            "noisy_path_relative": "09851.png",
+            "clean_path_relative": "09851.png"
+        },
+        {
+            "filename": "09875.png",
+            "noisy_path_relative": "09875.png",
+            "clean_path_relative": "09875.png"
+        },
+        {
+            "filename": "09929.png",
+            "noisy_path_relative": "09929.png",
+            "clean_path_relative": "09929.png"
+        },
+        {
+            "filename": "09936.png",
+            "noisy_path_relative": "09936.png",
+            "clean_path_relative": "09936.png"
+        },
+        {
+            "filename": "09951.png",
+            "noisy_path_relative": "09951.png",
+            "clean_path_relative": "09951.png"
+        },
+        {
+            "filename": "09988.png",
+            "noisy_path_relative": "09988.png",
+            "clean_path_relative": "09988.png"
+        },
+        {
+            "filename": "10013.png",
+            "noisy_path_relative": "10013.png",
+            "clean_path_relative": "10013.png"
+        },
+        {
+            "filename": "10039.png",
+            "noisy_path_relative": "10039.png",
+            "clean_path_relative": "10039.png"
+        },
+        {
+            "filename": "10065.png",
+            "noisy_path_relative": "10065.png",
+            "clean_path_relative": "10065.png"
+        },
+        {
+            "filename": "10067.png",
+            "noisy_path_relative": "10067.png",
+            "clean_path_relative": "10067.png"
+        },
+        {
+            "filename": "10081.png",
+            "noisy_path_relative": "10081.png",
+            "clean_path_relative": "10081.png"
+        },
+        {
+            "filename": "10105.png",
+            "noisy_path_relative": "10105.png",
+            "clean_path_relative": "10105.png"
+        },
+        {
+            "filename": "10122.png",
+            "noisy_path_relative": "10122.png",
+            "clean_path_relative": "10122.png"
+        },
+        {
+            "filename": "10172.png",
+            "noisy_path_relative": "10172.png",
+            "clean_path_relative": "10172.png"
+        },
+        {
+            "filename": "10190.png",
+            "noisy_path_relative": "10190.png",
+            "clean_path_relative": "10190.png"
+        },
+        {
+            "filename": "10216.png",
+            "noisy_path_relative": "10216.png",
+            "clean_path_relative": "10216.png"
+        },
+        {
+            "filename": "10269.png",
+            "noisy_path_relative": "10269.png",
+            "clean_path_relative": "10269.png"
+        },
+        {
+            "filename": "10287.png",
+            "noisy_path_relative": "10287.png",
+            "clean_path_relative": "10287.png"
+        },
+        {
+            "filename": "10319.png",
+            "noisy_path_relative": "10319.png",
+            "clean_path_relative": "10319.png"
+        },
+        {
+            "filename": "10336.png",
+            "noisy_path_relative": "10336.png",
+            "clean_path_relative": "10336.png"
+        },
+        {
+            "filename": "10342.png",
+            "noisy_path_relative": "10342.png",
+            "clean_path_relative": "10342.png"
+        },
+        {
+            "filename": "10351.png",
+            "noisy_path_relative": "10351.png",
+            "clean_path_relative": "10351.png"
+        },
+        {
+            "filename": "10434.png",
+            "noisy_path_relative": "10434.png",
+            "clean_path_relative": "10434.png"
+        },
+        {
+            "filename": "10438.png",
+            "noisy_path_relative": "10438.png",
+            "clean_path_relative": "10438.png"
+        },
+        {
+            "filename": "10449.png",
+            "noisy_path_relative": "10449.png",
+            "clean_path_relative": "10449.png"
+        },
+        {
+            "filename": "10472.png",
+            "noisy_path_relative": "10472.png",
+            "clean_path_relative": "10472.png"
+        },
+        {
+            "filename": "10487.png",
+            "noisy_path_relative": "10487.png",
+            "clean_path_relative": "10487.png"
+        },
+        {
+            "filename": "10491.png",
+            "noisy_path_relative": "10491.png",
+            "clean_path_relative": "10491.png"
+        },
+        {
+            "filename": "10517.png",
+            "noisy_path_relative": "10517.png",
+            "clean_path_relative": "10517.png"
+        },
+        {
+            "filename": "10541.png",
+            "noisy_path_relative": "10541.png",
+            "clean_path_relative": "10541.png"
+        },
+        {
+            "filename": "10572.png",
+            "noisy_path_relative": "10572.png",
+            "clean_path_relative": "10572.png"
+        },
+        {
+            "filename": "10583.png",
+            "noisy_path_relative": "10583.png",
+            "clean_path_relative": "10583.png"
+        },
+        {
+            "filename": "10584.png",
+            "noisy_path_relative": "10584.png",
+            "clean_path_relative": "10584.png"
+        },
+        {
+            "filename": "10619.png",
+            "noisy_path_relative": "10619.png",
+            "clean_path_relative": "10619.png"
+        },
+        {
+            "filename": "10651.png",
+            "noisy_path_relative": "10651.png",
+            "clean_path_relative": "10651.png"
+        },
+        {
+            "filename": "10654.png",
+            "noisy_path_relative": "10654.png",
+            "clean_path_relative": "10654.png"
+        },
+        {
+            "filename": "10661.png",
+            "noisy_path_relative": "10661.png",
+            "clean_path_relative": "10661.png"
+        },
+        {
+            "filename": "10694.png",
+            "noisy_path_relative": "10694.png",
+            "clean_path_relative": "10694.png"
+        },
+        {
+            "filename": "10711.png",
+            "noisy_path_relative": "10711.png",
+            "clean_path_relative": "10711.png"
+        },
+        {
+            "filename": "10737.png",
+            "noisy_path_relative": "10737.png",
+            "clean_path_relative": "10737.png"
+        },
+        {
+            "filename": "10806.png",
+            "noisy_path_relative": "10806.png",
+            "clean_path_relative": "10806.png"
+        },
+        {
+            "filename": "10823.png",
+            "noisy_path_relative": "10823.png",
+            "clean_path_relative": "10823.png"
+        },
+        {
+            "filename": "10834.png",
+            "noisy_path_relative": "10834.png",
+            "clean_path_relative": "10834.png"
+        },
+        {
+            "filename": "10838.png",
+            "noisy_path_relative": "10838.png",
+            "clean_path_relative": "10838.png"
+        },
+        {
+            "filename": "10843.png",
+            "noisy_path_relative": "10843.png",
+            "clean_path_relative": "10843.png"
+        },
+        {
+            "filename": "10906.png",
+            "noisy_path_relative": "10906.png",
+            "clean_path_relative": "10906.png"
+        },
+        {
+            "filename": "10919.png",
+            "noisy_path_relative": "10919.png",
+            "clean_path_relative": "10919.png"
+        },
+        {
+            "filename": "10925.png",
+            "noisy_path_relative": "10925.png",
+            "clean_path_relative": "10925.png"
+        },
+        {
+            "filename": "11033.png",
+            "noisy_path_relative": "11033.png",
+            "clean_path_relative": "11033.png"
+        },
+        {
+            "filename": "11043.png",
+            "noisy_path_relative": "11043.png",
+            "clean_path_relative": "11043.png"
+        },
+        {
+            "filename": "11071.png",
+            "noisy_path_relative": "11071.png",
+            "clean_path_relative": "11071.png"
+        },
+        {
+            "filename": "11085.png",
+            "noisy_path_relative": "11085.png",
+            "clean_path_relative": "11085.png"
+        },
+        {
+            "filename": "11114.png",
+            "noisy_path_relative": "11114.png",
+            "clean_path_relative": "11114.png"
+        },
+        {
+            "filename": "11115.png",
+            "noisy_path_relative": "11115.png",
+            "clean_path_relative": "11115.png"
+        },
+        {
+            "filename": "11123.png",
+            "noisy_path_relative": "11123.png",
+            "clean_path_relative": "11123.png"
+        },
+        {
+            "filename": "11313.png",
+            "noisy_path_relative": "11313.png",
+            "clean_path_relative": "11313.png"
+        },
+        {
+            "filename": "11322.png",
+            "noisy_path_relative": "11322.png",
+            "clean_path_relative": "11322.png"
+        },
+        {
+            "filename": "11345.png",
+            "noisy_path_relative": "11345.png",
+            "clean_path_relative": "11345.png"
+        },
+        {
+            "filename": "11388.png",
+            "noisy_path_relative": "11388.png",
+            "clean_path_relative": "11388.png"
+        },
+        {
+            "filename": "11432.png",
+            "noisy_path_relative": "11432.png",
+            "clean_path_relative": "11432.png"
+        },
+        {
+            "filename": "11454.png",
+            "noisy_path_relative": "11454.png",
+            "clean_path_relative": "11454.png"
+        },
+        {
+            "filename": "11465.png",
+            "noisy_path_relative": "11465.png",
+            "clean_path_relative": "11465.png"
+        },
+        {
+            "filename": "11497.png",
+            "noisy_path_relative": "11497.png",
+            "clean_path_relative": "11497.png"
+        },
+        {
+            "filename": "11501.png",
+            "noisy_path_relative": "11501.png",
+            "clean_path_relative": "11501.png"
+        },
+        {
+            "filename": "11527.png",
+            "noisy_path_relative": "11527.png",
+            "clean_path_relative": "11527.png"
+        },
+        {
+            "filename": "11573.png",
+            "noisy_path_relative": "11573.png",
+            "clean_path_relative": "11573.png"
+        },
+        {
+            "filename": "11580.png",
+            "noisy_path_relative": "11580.png",
+            "clean_path_relative": "11580.png"
+        },
+        {
+            "filename": "11606.png",
+            "noisy_path_relative": "11606.png",
+            "clean_path_relative": "11606.png"
+        },
+        {
+            "filename": "11636.png",
+            "noisy_path_relative": "11636.png",
+            "clean_path_relative": "11636.png"
+        },
+        {
+            "filename": "11688.png",
+            "noisy_path_relative": "11688.png",
+            "clean_path_relative": "11688.png"
+        },
+        {
+            "filename": "11751.png",
+            "noisy_path_relative": "11751.png",
+            "clean_path_relative": "11751.png"
+        },
+        {
+            "filename": "11796.png",
+            "noisy_path_relative": "11796.png",
+            "clean_path_relative": "11796.png"
+        },
+        {
+            "filename": "11821.png",
+            "noisy_path_relative": "11821.png",
+            "clean_path_relative": "11821.png"
+        },
+        {
+            "filename": "11822.png",
+            "noisy_path_relative": "11822.png",
+            "clean_path_relative": "11822.png"
+        },
+        {
+            "filename": "11914.png",
+            "noisy_path_relative": "11914.png",
+            "clean_path_relative": "11914.png"
+        },
+        {
+            "filename": "11971.png",
+            "noisy_path_relative": "11971.png",
+            "clean_path_relative": "11971.png"
+        },
+        {
+            "filename": "12031.png",
+            "noisy_path_relative": "12031.png",
+            "clean_path_relative": "12031.png"
+        },
+        {
+            "filename": "12034.png",
+            "noisy_path_relative": "12034.png",
+            "clean_path_relative": "12034.png"
+        },
+        {
+            "filename": "12043.png",
+            "noisy_path_relative": "12043.png",
+            "clean_path_relative": "12043.png"
+        },
+        {
+            "filename": "12123.png",
+            "noisy_path_relative": "12123.png",
+            "clean_path_relative": "12123.png"
+        },
+        {
+            "filename": "12133.png",
+            "noisy_path_relative": "12133.png",
+            "clean_path_relative": "12133.png"
+        },
+        {
+            "filename": "12142.png",
+            "noisy_path_relative": "12142.png",
+            "clean_path_relative": "12142.png"
+        },
+        {
+            "filename": "12146.png",
+            "noisy_path_relative": "12146.png",
+            "clean_path_relative": "12146.png"
+        },
+        {
+            "filename": "12152.png",
+            "noisy_path_relative": "12152.png",
+            "clean_path_relative": "12152.png"
+        },
+        {
+            "filename": "12221.png",
+            "noisy_path_relative": "12221.png",
+            "clean_path_relative": "12221.png"
+        },
+        {
+            "filename": "12278.png",
+            "noisy_path_relative": "12278.png",
+            "clean_path_relative": "12278.png"
+        },
+        {
+            "filename": "12348.png",
+            "noisy_path_relative": "12348.png",
+            "clean_path_relative": "12348.png"
+        },
+        {
+            "filename": "12356.png",
+            "noisy_path_relative": "12356.png",
+            "clean_path_relative": "12356.png"
+        },
+        {
+            "filename": "12388.png",
+            "noisy_path_relative": "12388.png",
+            "clean_path_relative": "12388.png"
+        },
+        {
+            "filename": "12413.png",
+            "noisy_path_relative": "12413.png",
+            "clean_path_relative": "12413.png"
+        },
+        {
+            "filename": "12460.png",
+            "noisy_path_relative": "12460.png",
+            "clean_path_relative": "12460.png"
+        },
+        {
+            "filename": "12478.png",
+            "noisy_path_relative": "12478.png",
+            "clean_path_relative": "12478.png"
+        },
+        {
+            "filename": "12496.png",
+            "noisy_path_relative": "12496.png",
+            "clean_path_relative": "12496.png"
+        },
+        {
+            "filename": "12506.png",
+            "noisy_path_relative": "12506.png",
+            "clean_path_relative": "12506.png"
+        },
+        {
+            "filename": "12520.png",
+            "noisy_path_relative": "12520.png",
+            "clean_path_relative": "12520.png"
+        },
+        {
+            "filename": "12528.png",
+            "noisy_path_relative": "12528.png",
+            "clean_path_relative": "12528.png"
+        },
+        {
+            "filename": "12542.png",
+            "noisy_path_relative": "12542.png",
+            "clean_path_relative": "12542.png"
+        },
+        {
+            "filename": "12576.png",
+            "noisy_path_relative": "12576.png",
+            "clean_path_relative": "12576.png"
+        },
+        {
+            "filename": "12627.png",
+            "noisy_path_relative": "12627.png",
+            "clean_path_relative": "12627.png"
+        },
+        {
+            "filename": "12679.png",
+            "noisy_path_relative": "12679.png",
+            "clean_path_relative": "12679.png"
+        },
+        {
+            "filename": "12683.png",
+            "noisy_path_relative": "12683.png",
+            "clean_path_relative": "12683.png"
+        },
+        {
+            "filename": "12693.png",
+            "noisy_path_relative": "12693.png",
+            "clean_path_relative": "12693.png"
+        },
+        {
+            "filename": "12698.png",
+            "noisy_path_relative": "12698.png",
+            "clean_path_relative": "12698.png"
+        },
+        {
+            "filename": "12775.png",
+            "noisy_path_relative": "12775.png",
+            "clean_path_relative": "12775.png"
+        },
+        {
+            "filename": "12809.png",
+            "noisy_path_relative": "12809.png",
+            "clean_path_relative": "12809.png"
+        },
+        {
+            "filename": "12863.png",
+            "noisy_path_relative": "12863.png",
+            "clean_path_relative": "12863.png"
+        },
+        {
+            "filename": "12873.png",
+            "noisy_path_relative": "12873.png",
+            "clean_path_relative": "12873.png"
+        },
+        {
+            "filename": "12898.png",
+            "noisy_path_relative": "12898.png",
+            "clean_path_relative": "12898.png"
+        },
+        {
+            "filename": "12914.png",
+            "noisy_path_relative": "12914.png",
+            "clean_path_relative": "12914.png"
+        },
+        {
+            "filename": "12923.png",
+            "noisy_path_relative": "12923.png",
+            "clean_path_relative": "12923.png"
+        },
+        {
+            "filename": "12937.png",
+            "noisy_path_relative": "12937.png",
+            "clean_path_relative": "12937.png"
+        },
+        {
+            "filename": "12950.png",
+            "noisy_path_relative": "12950.png",
+            "clean_path_relative": "12950.png"
+        },
+        {
+            "filename": "12957.png",
+            "noisy_path_relative": "12957.png",
+            "clean_path_relative": "12957.png"
+        },
+        {
+            "filename": "12967.png",
+            "noisy_path_relative": "12967.png",
+            "clean_path_relative": "12967.png"
+        },
+        {
+            "filename": "13005.png",
+            "noisy_path_relative": "13005.png",
+            "clean_path_relative": "13005.png"
+        },
+        {
+            "filename": "13050.png",
+            "noisy_path_relative": "13050.png",
+            "clean_path_relative": "13050.png"
+        },
+        {
+            "filename": "13056.png",
+            "noisy_path_relative": "13056.png",
+            "clean_path_relative": "13056.png"
+        },
+        {
+            "filename": "13069.png",
+            "noisy_path_relative": "13069.png",
+            "clean_path_relative": "13069.png"
+        },
+        {
+            "filename": "13153.png",
+            "noisy_path_relative": "13153.png",
+            "clean_path_relative": "13153.png"
+        },
+        {
+            "filename": "13158.png",
+            "noisy_path_relative": "13158.png",
+            "clean_path_relative": "13158.png"
+        },
+        {
+            "filename": "13166.png",
+            "noisy_path_relative": "13166.png",
+            "clean_path_relative": "13166.png"
+        },
+        {
+            "filename": "13170.png",
+            "noisy_path_relative": "13170.png",
+            "clean_path_relative": "13170.png"
+        },
+        {
+            "filename": "13212.png",
+            "noisy_path_relative": "13212.png",
+            "clean_path_relative": "13212.png"
+        },
+        {
+            "filename": "13216.png",
+            "noisy_path_relative": "13216.png",
+            "clean_path_relative": "13216.png"
+        },
+        {
+            "filename": "13325.png",
+            "noisy_path_relative": "13325.png",
+            "clean_path_relative": "13325.png"
+        },
+        {
+            "filename": "13389.png",
+            "noisy_path_relative": "13389.png",
+            "clean_path_relative": "13389.png"
+        },
+        {
+            "filename": "13426.png",
+            "noisy_path_relative": "13426.png",
+            "clean_path_relative": "13426.png"
+        },
+        {
+            "filename": "13460.png",
+            "noisy_path_relative": "13460.png",
+            "clean_path_relative": "13460.png"
+        },
+        {
+            "filename": "13495.png",
+            "noisy_path_relative": "13495.png",
+            "clean_path_relative": "13495.png"
+        },
+        {
+            "filename": "13512.png",
+            "noisy_path_relative": "13512.png",
+            "clean_path_relative": "13512.png"
+        },
+        {
+            "filename": "13519.png",
+            "noisy_path_relative": "13519.png",
+            "clean_path_relative": "13519.png"
+        },
+        {
+            "filename": "13534.png",
+            "noisy_path_relative": "13534.png",
+            "clean_path_relative": "13534.png"
+        },
+        {
+            "filename": "13542.png",
+            "noisy_path_relative": "13542.png",
+            "clean_path_relative": "13542.png"
+        },
+        {
+            "filename": "13552.png",
+            "noisy_path_relative": "13552.png",
+            "clean_path_relative": "13552.png"
+        },
+        {
+            "filename": "13574.png",
+            "noisy_path_relative": "13574.png",
+            "clean_path_relative": "13574.png"
+        },
+        {
+            "filename": "13575.png",
+            "noisy_path_relative": "13575.png",
+            "clean_path_relative": "13575.png"
+        },
+        {
+            "filename": "13612.png",
+            "noisy_path_relative": "13612.png",
+            "clean_path_relative": "13612.png"
+        },
+        {
+            "filename": "13618.png",
+            "noisy_path_relative": "13618.png",
+            "clean_path_relative": "13618.png"
+        },
+        {
+            "filename": "13640.png",
+            "noisy_path_relative": "13640.png",
+            "clean_path_relative": "13640.png"
+        },
+        {
+            "filename": "13683.png",
+            "noisy_path_relative": "13683.png",
+            "clean_path_relative": "13683.png"
+        },
+        {
+            "filename": "13701.png",
+            "noisy_path_relative": "13701.png",
+            "clean_path_relative": "13701.png"
+        },
+        {
+            "filename": "13711.png",
+            "noisy_path_relative": "13711.png",
+            "clean_path_relative": "13711.png"
+        },
+        {
+            "filename": "13719.png",
+            "noisy_path_relative": "13719.png",
+            "clean_path_relative": "13719.png"
+        },
+        {
+            "filename": "13727.png",
+            "noisy_path_relative": "13727.png",
+            "clean_path_relative": "13727.png"
+        },
+        {
+            "filename": "13730.png",
+            "noisy_path_relative": "13730.png",
+            "clean_path_relative": "13730.png"
+        },
+        {
+            "filename": "13738.png",
+            "noisy_path_relative": "13738.png",
+            "clean_path_relative": "13738.png"
+        },
+        {
+            "filename": "13761.png",
+            "noisy_path_relative": "13761.png",
+            "clean_path_relative": "13761.png"
+        },
+        {
+            "filename": "13768.png",
+            "noisy_path_relative": "13768.png",
+            "clean_path_relative": "13768.png"
+        },
+        {
+            "filename": "13789.png",
+            "noisy_path_relative": "13789.png",
+            "clean_path_relative": "13789.png"
+        },
+        {
+            "filename": "13821.png",
+            "noisy_path_relative": "13821.png",
+            "clean_path_relative": "13821.png"
+        },
+        {
+            "filename": "13878.png",
+            "noisy_path_relative": "13878.png",
+            "clean_path_relative": "13878.png"
+        },
+        {
+            "filename": "13906.png",
+            "noisy_path_relative": "13906.png",
+            "clean_path_relative": "13906.png"
+        },
+        {
+            "filename": "13960.png",
+            "noisy_path_relative": "13960.png",
+            "clean_path_relative": "13960.png"
+        },
+        {
+            "filename": "14020.png",
+            "noisy_path_relative": "14020.png",
+            "clean_path_relative": "14020.png"
+        },
+        {
+            "filename": "14029.png",
+            "noisy_path_relative": "14029.png",
+            "clean_path_relative": "14029.png"
+        },
+        {
+            "filename": "14050.png",
+            "noisy_path_relative": "14050.png",
+            "clean_path_relative": "14050.png"
+        },
+        {
+            "filename": "14061.png",
+            "noisy_path_relative": "14061.png",
+            "clean_path_relative": "14061.png"
+        },
+        {
+            "filename": "14114.png",
+            "noisy_path_relative": "14114.png",
+            "clean_path_relative": "14114.png"
+        },
+        {
+            "filename": "14129.png",
+            "noisy_path_relative": "14129.png",
+            "clean_path_relative": "14129.png"
+        },
+        {
+            "filename": "14142.png",
+            "noisy_path_relative": "14142.png",
+            "clean_path_relative": "14142.png"
+        },
+        {
+            "filename": "14154.png",
+            "noisy_path_relative": "14154.png",
+            "clean_path_relative": "14154.png"
+        },
+        {
+            "filename": "14162.png",
+            "noisy_path_relative": "14162.png",
+            "clean_path_relative": "14162.png"
+        },
+        {
+            "filename": "14178.png",
+            "noisy_path_relative": "14178.png",
+            "clean_path_relative": "14178.png"
+        },
+        {
+            "filename": "14203.png",
+            "noisy_path_relative": "14203.png",
+            "clean_path_relative": "14203.png"
+        },
+        {
+            "filename": "14234.png",
+            "noisy_path_relative": "14234.png",
+            "clean_path_relative": "14234.png"
+        },
+        {
+            "filename": "14284.png",
+            "noisy_path_relative": "14284.png",
+            "clean_path_relative": "14284.png"
+        },
+        {
+            "filename": "14293.png",
+            "noisy_path_relative": "14293.png",
+            "clean_path_relative": "14293.png"
+        },
+        {
+            "filename": "14312.png",
+            "noisy_path_relative": "14312.png",
+            "clean_path_relative": "14312.png"
+        },
+        {
+            "filename": "14320.png",
+            "noisy_path_relative": "14320.png",
+            "clean_path_relative": "14320.png"
+        },
+        {
+            "filename": "14394.png",
+            "noisy_path_relative": "14394.png",
+            "clean_path_relative": "14394.png"
+        },
+        {
+            "filename": "14399.png",
+            "noisy_path_relative": "14399.png",
+            "clean_path_relative": "14399.png"
+        },
+        {
+            "filename": "14426.png",
+            "noisy_path_relative": "14426.png",
+            "clean_path_relative": "14426.png"
+        },
+        {
+            "filename": "14452.png",
+            "noisy_path_relative": "14452.png",
+            "clean_path_relative": "14452.png"
+        },
+        {
+            "filename": "14471.png",
+            "noisy_path_relative": "14471.png",
+            "clean_path_relative": "14471.png"
+        },
+        {
+            "filename": "14509.png",
+            "noisy_path_relative": "14509.png",
+            "clean_path_relative": "14509.png"
+        },
+        {
+            "filename": "14517.png",
+            "noisy_path_relative": "14517.png",
+            "clean_path_relative": "14517.png"
+        },
+        {
+            "filename": "14531.png",
+            "noisy_path_relative": "14531.png",
+            "clean_path_relative": "14531.png"
+        },
+        {
+            "filename": "14540.png",
+            "noisy_path_relative": "14540.png",
+            "clean_path_relative": "14540.png"
+        },
+        {
+            "filename": "14566.png",
+            "noisy_path_relative": "14566.png",
+            "clean_path_relative": "14566.png"
+        },
+        {
+            "filename": "14575.png",
+            "noisy_path_relative": "14575.png",
+            "clean_path_relative": "14575.png"
+        },
+        {
+            "filename": "14576.png",
+            "noisy_path_relative": "14576.png",
+            "clean_path_relative": "14576.png"
+        },
+        {
+            "filename": "14594.png",
+            "noisy_path_relative": "14594.png",
+            "clean_path_relative": "14594.png"
+        },
+        {
+            "filename": "14599.png",
+            "noisy_path_relative": "14599.png",
+            "clean_path_relative": "14599.png"
+        },
+        {
+            "filename": "14621.png",
+            "noisy_path_relative": "14621.png",
+            "clean_path_relative": "14621.png"
+        },
+        {
+            "filename": "14622.png",
+            "noisy_path_relative": "14622.png",
+            "clean_path_relative": "14622.png"
+        },
+        {
+            "filename": "14628.png",
+            "noisy_path_relative": "14628.png",
+            "clean_path_relative": "14628.png"
+        },
+        {
+            "filename": "14666.png",
+            "noisy_path_relative": "14666.png",
+            "clean_path_relative": "14666.png"
+        },
+        {
+            "filename": "14677.png",
+            "noisy_path_relative": "14677.png",
+            "clean_path_relative": "14677.png"
+        },
+        {
+            "filename": "14739.png",
+            "noisy_path_relative": "14739.png",
+            "clean_path_relative": "14739.png"
+        },
+        {
+            "filename": "14756.png",
+            "noisy_path_relative": "14756.png",
+            "clean_path_relative": "14756.png"
+        },
+        {
+            "filename": "14800.png",
+            "noisy_path_relative": "14800.png",
+            "clean_path_relative": "14800.png"
+        },
+        {
+            "filename": "14901.png",
+            "noisy_path_relative": "14901.png",
+            "clean_path_relative": "14901.png"
+        },
+        {
+            "filename": "14917.png",
+            "noisy_path_relative": "14917.png",
+            "clean_path_relative": "14917.png"
+        },
+        {
+            "filename": "14944.png",
+            "noisy_path_relative": "14944.png",
+            "clean_path_relative": "14944.png"
+        },
+        {
+            "filename": "14971.png",
+            "noisy_path_relative": "14971.png",
+            "clean_path_relative": "14971.png"
+        },
+        {
+            "filename": "14987.png",
+            "noisy_path_relative": "14987.png",
+            "clean_path_relative": "14987.png"
+        },
+        {
+            "filename": "15057.png",
+            "noisy_path_relative": "15057.png",
+            "clean_path_relative": "15057.png"
+        },
+        {
+            "filename": "15064.png",
+            "noisy_path_relative": "15064.png",
+            "clean_path_relative": "15064.png"
+        },
+        {
+            "filename": "15089.png",
+            "noisy_path_relative": "15089.png",
+            "clean_path_relative": "15089.png"
+        },
+        {
+            "filename": "15160.png",
+            "noisy_path_relative": "15160.png",
+            "clean_path_relative": "15160.png"
+        },
+        {
+            "filename": "15208.png",
+            "noisy_path_relative": "15208.png",
+            "clean_path_relative": "15208.png"
+        },
+        {
+            "filename": "15217.png",
+            "noisy_path_relative": "15217.png",
+            "clean_path_relative": "15217.png"
+        },
+        {
+            "filename": "15241.png",
+            "noisy_path_relative": "15241.png",
+            "clean_path_relative": "15241.png"
+        },
+        {
+            "filename": "15290.png",
+            "noisy_path_relative": "15290.png",
+            "clean_path_relative": "15290.png"
+        },
+        {
+            "filename": "15410.png",
+            "noisy_path_relative": "15410.png",
+            "clean_path_relative": "15410.png"
+        },
+        {
+            "filename": "15425.png",
+            "noisy_path_relative": "15425.png",
+            "clean_path_relative": "15425.png"
+        },
+        {
+            "filename": "15480.png",
+            "noisy_path_relative": "15480.png",
+            "clean_path_relative": "15480.png"
+        },
+        {
+            "filename": "15487.png",
+            "noisy_path_relative": "15487.png",
+            "clean_path_relative": "15487.png"
+        },
+        {
+            "filename": "15507.png",
+            "noisy_path_relative": "15507.png",
+            "clean_path_relative": "15507.png"
+        },
+        {
+            "filename": "15508.png",
+            "noisy_path_relative": "15508.png",
+            "clean_path_relative": "15508.png"
+        },
+        {
+            "filename": "15540.png",
+            "noisy_path_relative": "15540.png",
+            "clean_path_relative": "15540.png"
+        },
+        {
+            "filename": "15549.png",
+            "noisy_path_relative": "15549.png",
+            "clean_path_relative": "15549.png"
+        },
+        {
+            "filename": "15591.png",
+            "noisy_path_relative": "15591.png",
+            "clean_path_relative": "15591.png"
+        },
+        {
+            "filename": "15608.png",
+            "noisy_path_relative": "15608.png",
+            "clean_path_relative": "15608.png"
+        },
+        {
+            "filename": "15620.png",
+            "noisy_path_relative": "15620.png",
+            "clean_path_relative": "15620.png"
+        },
+        {
+            "filename": "15622.png",
+            "noisy_path_relative": "15622.png",
+            "clean_path_relative": "15622.png"
+        },
+        {
+            "filename": "15625.png",
+            "noisy_path_relative": "15625.png",
+            "clean_path_relative": "15625.png"
+        },
+        {
+            "filename": "15637.png",
+            "noisy_path_relative": "15637.png",
+            "clean_path_relative": "15637.png"
+        },
+        {
+            "filename": "15638.png",
+            "noisy_path_relative": "15638.png",
+            "clean_path_relative": "15638.png"
+        },
+        {
+            "filename": "15643.png",
+            "noisy_path_relative": "15643.png",
+            "clean_path_relative": "15643.png"
+        },
+        {
+            "filename": "15685.png",
+            "noisy_path_relative": "15685.png",
+            "clean_path_relative": "15685.png"
+        },
+        {
+            "filename": "15735.png",
+            "noisy_path_relative": "15735.png",
+            "clean_path_relative": "15735.png"
+        },
+        {
+            "filename": "15768.png",
+            "noisy_path_relative": "15768.png",
+            "clean_path_relative": "15768.png"
+        },
+        {
+            "filename": "15780.png",
+            "noisy_path_relative": "15780.png",
+            "clean_path_relative": "15780.png"
+        },
+        {
+            "filename": "15787.png",
+            "noisy_path_relative": "15787.png",
+            "clean_path_relative": "15787.png"
+        },
+        {
+            "filename": "15834.png",
+            "noisy_path_relative": "15834.png",
+            "clean_path_relative": "15834.png"
+        },
+        {
+            "filename": "15856.png",
+            "noisy_path_relative": "15856.png",
+            "clean_path_relative": "15856.png"
+        },
+        {
+            "filename": "15864.png",
+            "noisy_path_relative": "15864.png",
+            "clean_path_relative": "15864.png"
+        },
+        {
+            "filename": "15868.png",
+            "noisy_path_relative": "15868.png",
+            "clean_path_relative": "15868.png"
+        },
+        {
+            "filename": "15891.png",
+            "noisy_path_relative": "15891.png",
+            "clean_path_relative": "15891.png"
+        },
+        {
+            "filename": "15983.png",
+            "noisy_path_relative": "15983.png",
+            "clean_path_relative": "15983.png"
+        },
+        {
+            "filename": "15992.png",
+            "noisy_path_relative": "15992.png",
+            "clean_path_relative": "15992.png"
+        },
+        {
+            "filename": "16016.png",
+            "noisy_path_relative": "16016.png",
+            "clean_path_relative": "16016.png"
+        },
+        {
+            "filename": "16077.png",
+            "noisy_path_relative": "16077.png",
+            "clean_path_relative": "16077.png"
+        },
+        {
+            "filename": "16101.png",
+            "noisy_path_relative": "16101.png",
+            "clean_path_relative": "16101.png"
+        },
+        {
+            "filename": "16116.png",
+            "noisy_path_relative": "16116.png",
+            "clean_path_relative": "16116.png"
+        },
+        {
+            "filename": "16148.png",
+            "noisy_path_relative": "16148.png",
+            "clean_path_relative": "16148.png"
+        },
+        {
+            "filename": "16227.png",
+            "noisy_path_relative": "16227.png",
+            "clean_path_relative": "16227.png"
+        },
+        {
+            "filename": "16286.png",
+            "noisy_path_relative": "16286.png",
+            "clean_path_relative": "16286.png"
+        },
+        {
+            "filename": "16290.png",
+            "noisy_path_relative": "16290.png",
+            "clean_path_relative": "16290.png"
+        },
+        {
+            "filename": "16319.png",
+            "noisy_path_relative": "16319.png",
+            "clean_path_relative": "16319.png"
+        },
+        {
+            "filename": "16322.png",
+            "noisy_path_relative": "16322.png",
+            "clean_path_relative": "16322.png"
+        },
+        {
+            "filename": "16327.png",
+            "noisy_path_relative": "16327.png",
+            "clean_path_relative": "16327.png"
+        },
+        {
+            "filename": "16342.png",
+            "noisy_path_relative": "16342.png",
+            "clean_path_relative": "16342.png"
+        },
+        {
+            "filename": "16352.png",
+            "noisy_path_relative": "16352.png",
+            "clean_path_relative": "16352.png"
+        },
+        {
+            "filename": "16368.png",
+            "noisy_path_relative": "16368.png",
+            "clean_path_relative": "16368.png"
+        },
+        {
+            "filename": "16370.png",
+            "noisy_path_relative": "16370.png",
+            "clean_path_relative": "16370.png"
+        },
+        {
+            "filename": "16378.png",
+            "noisy_path_relative": "16378.png",
+            "clean_path_relative": "16378.png"
+        },
+        {
+            "filename": "16415.png",
+            "noisy_path_relative": "16415.png",
+            "clean_path_relative": "16415.png"
+        },
+        {
+            "filename": "16461.png",
+            "noisy_path_relative": "16461.png",
+            "clean_path_relative": "16461.png"
+        },
+        {
+            "filename": "16501.png",
+            "noisy_path_relative": "16501.png",
+            "clean_path_relative": "16501.png"
+        },
+        {
+            "filename": "16528.png",
+            "noisy_path_relative": "16528.png",
+            "clean_path_relative": "16528.png"
+        },
+        {
+            "filename": "16532.png",
+            "noisy_path_relative": "16532.png",
+            "clean_path_relative": "16532.png"
+        },
+        {
+            "filename": "16545.png",
+            "noisy_path_relative": "16545.png",
+            "clean_path_relative": "16545.png"
+        },
+        {
+            "filename": "16557.png",
+            "noisy_path_relative": "16557.png",
+            "clean_path_relative": "16557.png"
+        },
+        {
+            "filename": "16585.png",
+            "noisy_path_relative": "16585.png",
+            "clean_path_relative": "16585.png"
+        },
+        {
+            "filename": "16596.png",
+            "noisy_path_relative": "16596.png",
+            "clean_path_relative": "16596.png"
+        },
+        {
+            "filename": "16657.png",
+            "noisy_path_relative": "16657.png",
+            "clean_path_relative": "16657.png"
+        },
+        {
+            "filename": "16667.png",
+            "noisy_path_relative": "16667.png",
+            "clean_path_relative": "16667.png"
+        },
+        {
+            "filename": "16686.png",
+            "noisy_path_relative": "16686.png",
+            "clean_path_relative": "16686.png"
+        },
+        {
+            "filename": "16706.png",
+            "noisy_path_relative": "16706.png",
+            "clean_path_relative": "16706.png"
+        },
+        {
+            "filename": "16752.png",
+            "noisy_path_relative": "16752.png",
+            "clean_path_relative": "16752.png"
+        },
+        {
+            "filename": "16780.png",
+            "noisy_path_relative": "16780.png",
+            "clean_path_relative": "16780.png"
+        },
+        {
+            "filename": "16783.png",
+            "noisy_path_relative": "16783.png",
+            "clean_path_relative": "16783.png"
+        },
+        {
+            "filename": "16798.png",
+            "noisy_path_relative": "16798.png",
+            "clean_path_relative": "16798.png"
+        },
+        {
+            "filename": "16809.png",
+            "noisy_path_relative": "16809.png",
+            "clean_path_relative": "16809.png"
+        },
+        {
+            "filename": "16810.png",
+            "noisy_path_relative": "16810.png",
+            "clean_path_relative": "16810.png"
+        },
+        {
+            "filename": "16818.png",
+            "noisy_path_relative": "16818.png",
+            "clean_path_relative": "16818.png"
+        },
+        {
+            "filename": "16889.png",
+            "noisy_path_relative": "16889.png",
+            "clean_path_relative": "16889.png"
+        },
+        {
+            "filename": "16909.png",
+            "noisy_path_relative": "16909.png",
+            "clean_path_relative": "16909.png"
+        },
+        {
+            "filename": "16922.png",
+            "noisy_path_relative": "16922.png",
+            "clean_path_relative": "16922.png"
+        },
+        {
+            "filename": "16926.png",
+            "noisy_path_relative": "16926.png",
+            "clean_path_relative": "16926.png"
+        },
+        {
+            "filename": "16964.png",
+            "noisy_path_relative": "16964.png",
+            "clean_path_relative": "16964.png"
+        },
+        {
+            "filename": "16984.png",
+            "noisy_path_relative": "16984.png",
+            "clean_path_relative": "16984.png"
+        },
+        {
+            "filename": "16986.png",
+            "noisy_path_relative": "16986.png",
+            "clean_path_relative": "16986.png"
+        },
+        {
+            "filename": "16991.png",
+            "noisy_path_relative": "16991.png",
+            "clean_path_relative": "16991.png"
+        },
+        {
+            "filename": "16994.png",
+            "noisy_path_relative": "16994.png",
+            "clean_path_relative": "16994.png"
+        },
+        {
+            "filename": "16998.png",
+            "noisy_path_relative": "16998.png",
+            "clean_path_relative": "16998.png"
+        },
+        {
+            "filename": "17007.png",
+            "noisy_path_relative": "17007.png",
+            "clean_path_relative": "17007.png"
+        },
+        {
+            "filename": "17012.png",
+            "noisy_path_relative": "17012.png",
+            "clean_path_relative": "17012.png"
+        },
+        {
+            "filename": "17036.png",
+            "noisy_path_relative": "17036.png",
+            "clean_path_relative": "17036.png"
+        },
+        {
+            "filename": "17138.png",
+            "noisy_path_relative": "17138.png",
+            "clean_path_relative": "17138.png"
+        },
+        {
+            "filename": "17178.png",
+            "noisy_path_relative": "17178.png",
+            "clean_path_relative": "17178.png"
+        },
+        {
+            "filename": "17196.png",
+            "noisy_path_relative": "17196.png",
+            "clean_path_relative": "17196.png"
+        },
+        {
+            "filename": "17220.png",
+            "noisy_path_relative": "17220.png",
+            "clean_path_relative": "17220.png"
+        },
+        {
+            "filename": "17242.png",
+            "noisy_path_relative": "17242.png",
+            "clean_path_relative": "17242.png"
+        },
+        {
+            "filename": "17267.png",
+            "noisy_path_relative": "17267.png",
+            "clean_path_relative": "17267.png"
+        },
+        {
+            "filename": "17275.png",
+            "noisy_path_relative": "17275.png",
+            "clean_path_relative": "17275.png"
+        },
+        {
+            "filename": "17314.png",
+            "noisy_path_relative": "17314.png",
+            "clean_path_relative": "17314.png"
+        },
+        {
+            "filename": "17328.png",
+            "noisy_path_relative": "17328.png",
+            "clean_path_relative": "17328.png"
+        },
+        {
+            "filename": "17333.png",
+            "noisy_path_relative": "17333.png",
+            "clean_path_relative": "17333.png"
+        },
+        {
+            "filename": "17354.png",
+            "noisy_path_relative": "17354.png",
+            "clean_path_relative": "17354.png"
+        },
+        {
+            "filename": "17463.png",
+            "noisy_path_relative": "17463.png",
+            "clean_path_relative": "17463.png"
+        },
+        {
+            "filename": "17503.png",
+            "noisy_path_relative": "17503.png",
+            "clean_path_relative": "17503.png"
+        },
+        {
+            "filename": "17505.png",
+            "noisy_path_relative": "17505.png",
+            "clean_path_relative": "17505.png"
+        },
+        {
+            "filename": "17532.png",
+            "noisy_path_relative": "17532.png",
+            "clean_path_relative": "17532.png"
+        },
+        {
+            "filename": "17568.png",
+            "noisy_path_relative": "17568.png",
+            "clean_path_relative": "17568.png"
+        },
+        {
+            "filename": "17571.png",
+            "noisy_path_relative": "17571.png",
+            "clean_path_relative": "17571.png"
+        },
+        {
+            "filename": "17592.png",
+            "noisy_path_relative": "17592.png",
+            "clean_path_relative": "17592.png"
+        },
+        {
+            "filename": "17605.png",
+            "noisy_path_relative": "17605.png",
+            "clean_path_relative": "17605.png"
+        },
+        {
+            "filename": "17617.png",
+            "noisy_path_relative": "17617.png",
+            "clean_path_relative": "17617.png"
+        },
+        {
+            "filename": "17654.png",
+            "noisy_path_relative": "17654.png",
+            "clean_path_relative": "17654.png"
+        },
+        {
+            "filename": "17663.png",
+            "noisy_path_relative": "17663.png",
+            "clean_path_relative": "17663.png"
+        },
+        {
+            "filename": "17664.png",
+            "noisy_path_relative": "17664.png",
+            "clean_path_relative": "17664.png"
+        },
+        {
+            "filename": "17690.png",
+            "noisy_path_relative": "17690.png",
+            "clean_path_relative": "17690.png"
+        },
+        {
+            "filename": "17762.png",
+            "noisy_path_relative": "17762.png",
+            "clean_path_relative": "17762.png"
+        },
+        {
+            "filename": "17803.png",
+            "noisy_path_relative": "17803.png",
+            "clean_path_relative": "17803.png"
+        },
+        {
+            "filename": "17822.png",
+            "noisy_path_relative": "17822.png",
+            "clean_path_relative": "17822.png"
+        },
+        {
+            "filename": "17858.png",
+            "noisy_path_relative": "17858.png",
+            "clean_path_relative": "17858.png"
+        },
+        {
+            "filename": "17895.png",
+            "noisy_path_relative": "17895.png",
+            "clean_path_relative": "17895.png"
+        },
+        {
+            "filename": "17912.png",
+            "noisy_path_relative": "17912.png",
+            "clean_path_relative": "17912.png"
+        },
+        {
+            "filename": "17929.png",
+            "noisy_path_relative": "17929.png",
+            "clean_path_relative": "17929.png"
+        },
+        {
+            "filename": "17995.png",
+            "noisy_path_relative": "17995.png",
+            "clean_path_relative": "17995.png"
+        },
+        {
+            "filename": "18005.png",
+            "noisy_path_relative": "18005.png",
+            "clean_path_relative": "18005.png"
+        },
+        {
+            "filename": "18025.png",
+            "noisy_path_relative": "18025.png",
+            "clean_path_relative": "18025.png"
+        },
+        {
+            "filename": "18055.png",
+            "noisy_path_relative": "18055.png",
+            "clean_path_relative": "18055.png"
+        },
+        {
+            "filename": "18075.png",
+            "noisy_path_relative": "18075.png",
+            "clean_path_relative": "18075.png"
+        },
+        {
+            "filename": "18119.png",
+            "noisy_path_relative": "18119.png",
+            "clean_path_relative": "18119.png"
+        },
+        {
+            "filename": "18156.png",
+            "noisy_path_relative": "18156.png",
+            "clean_path_relative": "18156.png"
+        },
+        {
+            "filename": "18244.png",
+            "noisy_path_relative": "18244.png",
+            "clean_path_relative": "18244.png"
+        },
+        {
+            "filename": "18279.png",
+            "noisy_path_relative": "18279.png",
+            "clean_path_relative": "18279.png"
+        },
+        {
+            "filename": "18393.png",
+            "noisy_path_relative": "18393.png",
+            "clean_path_relative": "18393.png"
+        },
+        {
+            "filename": "18401.png",
+            "noisy_path_relative": "18401.png",
+            "clean_path_relative": "18401.png"
+        },
+        {
+            "filename": "18402.png",
+            "noisy_path_relative": "18402.png",
+            "clean_path_relative": "18402.png"
+        },
+        {
+            "filename": "18408.png",
+            "noisy_path_relative": "18408.png",
+            "clean_path_relative": "18408.png"
+        },
+        {
+            "filename": "18412.png",
+            "noisy_path_relative": "18412.png",
+            "clean_path_relative": "18412.png"
+        },
+        {
+            "filename": "18417.png",
+            "noisy_path_relative": "18417.png",
+            "clean_path_relative": "18417.png"
+        },
+        {
+            "filename": "18440.png",
+            "noisy_path_relative": "18440.png",
+            "clean_path_relative": "18440.png"
+        },
+        {
+            "filename": "18441.png",
+            "noisy_path_relative": "18441.png",
+            "clean_path_relative": "18441.png"
+        },
+        {
+            "filename": "18455.png",
+            "noisy_path_relative": "18455.png",
+            "clean_path_relative": "18455.png"
+        },
+        {
+            "filename": "18460.png",
+            "noisy_path_relative": "18460.png",
+            "clean_path_relative": "18460.png"
+        },
+        {
+            "filename": "18487.png",
+            "noisy_path_relative": "18487.png",
+            "clean_path_relative": "18487.png"
+        },
+        {
+            "filename": "18493.png",
+            "noisy_path_relative": "18493.png",
+            "clean_path_relative": "18493.png"
+        },
+        {
+            "filename": "18494.png",
+            "noisy_path_relative": "18494.png",
+            "clean_path_relative": "18494.png"
+        },
+        {
+            "filename": "18498.png",
+            "noisy_path_relative": "18498.png",
+            "clean_path_relative": "18498.png"
+        },
+        {
+            "filename": "18511.png",
+            "noisy_path_relative": "18511.png",
+            "clean_path_relative": "18511.png"
+        },
+        {
+            "filename": "18527.png",
+            "noisy_path_relative": "18527.png",
+            "clean_path_relative": "18527.png"
+        },
+        {
+            "filename": "18545.png",
+            "noisy_path_relative": "18545.png",
+            "clean_path_relative": "18545.png"
+        },
+        {
+            "filename": "18557.png",
+            "noisy_path_relative": "18557.png",
+            "clean_path_relative": "18557.png"
+        },
+        {
+            "filename": "18563.png",
+            "noisy_path_relative": "18563.png",
+            "clean_path_relative": "18563.png"
+        },
+        {
+            "filename": "18587.png",
+            "noisy_path_relative": "18587.png",
+            "clean_path_relative": "18587.png"
+        },
+        {
+            "filename": "18592.png",
+            "noisy_path_relative": "18592.png",
+            "clean_path_relative": "18592.png"
+        },
+        {
+            "filename": "18597.png",
+            "noisy_path_relative": "18597.png",
+            "clean_path_relative": "18597.png"
+        },
+        {
+            "filename": "18624.png",
+            "noisy_path_relative": "18624.png",
+            "clean_path_relative": "18624.png"
+        },
+        {
+            "filename": "18631.png",
+            "noisy_path_relative": "18631.png",
+            "clean_path_relative": "18631.png"
+        },
+        {
+            "filename": "18730.png",
+            "noisy_path_relative": "18730.png",
+            "clean_path_relative": "18730.png"
+        },
+        {
+            "filename": "18787.png",
+            "noisy_path_relative": "18787.png",
+            "clean_path_relative": "18787.png"
+        },
+        {
+            "filename": "18795.png",
+            "noisy_path_relative": "18795.png",
+            "clean_path_relative": "18795.png"
+        },
+        {
+            "filename": "18813.png",
+            "noisy_path_relative": "18813.png",
+            "clean_path_relative": "18813.png"
+        },
+        {
+            "filename": "18816.png",
+            "noisy_path_relative": "18816.png",
+            "clean_path_relative": "18816.png"
+        },
+        {
+            "filename": "18863.png",
+            "noisy_path_relative": "18863.png",
+            "clean_path_relative": "18863.png"
+        },
+        {
+            "filename": "18890.png",
+            "noisy_path_relative": "18890.png",
+            "clean_path_relative": "18890.png"
+        },
+        {
+            "filename": "18893.png",
+            "noisy_path_relative": "18893.png",
+            "clean_path_relative": "18893.png"
+        },
+        {
+            "filename": "18901.png",
+            "noisy_path_relative": "18901.png",
+            "clean_path_relative": "18901.png"
+        },
+        {
+            "filename": "18977.png",
+            "noisy_path_relative": "18977.png",
+            "clean_path_relative": "18977.png"
+        },
+        {
+            "filename": "18986.png",
+            "noisy_path_relative": "18986.png",
+            "clean_path_relative": "18986.png"
+        },
+        {
+            "filename": "19007.png",
+            "noisy_path_relative": "19007.png",
+            "clean_path_relative": "19007.png"
+        },
+        {
+            "filename": "19035.png",
+            "noisy_path_relative": "19035.png",
+            "clean_path_relative": "19035.png"
+        },
+        {
+            "filename": "19044.png",
+            "noisy_path_relative": "19044.png",
+            "clean_path_relative": "19044.png"
+        },
+        {
+            "filename": "19049.png",
+            "noisy_path_relative": "19049.png",
+            "clean_path_relative": "19049.png"
+        },
+        {
+            "filename": "19063.png",
+            "noisy_path_relative": "19063.png",
+            "clean_path_relative": "19063.png"
+        },
+        {
+            "filename": "19092.png",
+            "noisy_path_relative": "19092.png",
+            "clean_path_relative": "19092.png"
+        },
+        {
+            "filename": "19094.png",
+            "noisy_path_relative": "19094.png",
+            "clean_path_relative": "19094.png"
+        },
+        {
+            "filename": "19099.png",
+            "noisy_path_relative": "19099.png",
+            "clean_path_relative": "19099.png"
+        },
+        {
+            "filename": "19100.png",
+            "noisy_path_relative": "19100.png",
+            "clean_path_relative": "19100.png"
+        },
+        {
+            "filename": "19141.png",
+            "noisy_path_relative": "19141.png",
+            "clean_path_relative": "19141.png"
+        },
+        {
+            "filename": "19169.png",
+            "noisy_path_relative": "19169.png",
+            "clean_path_relative": "19169.png"
+        },
+        {
+            "filename": "19181.png",
+            "noisy_path_relative": "19181.png",
+            "clean_path_relative": "19181.png"
+        },
+        {
+            "filename": "19195.png",
+            "noisy_path_relative": "19195.png",
+            "clean_path_relative": "19195.png"
+        },
+        {
+            "filename": "19234.png",
+            "noisy_path_relative": "19234.png",
+            "clean_path_relative": "19234.png"
+        },
+        {
+            "filename": "19244.png",
+            "noisy_path_relative": "19244.png",
+            "clean_path_relative": "19244.png"
+        },
+        {
+            "filename": "19251.png",
+            "noisy_path_relative": "19251.png",
+            "clean_path_relative": "19251.png"
+        },
+        {
+            "filename": "19264.png",
+            "noisy_path_relative": "19264.png",
+            "clean_path_relative": "19264.png"
+        },
+        {
+            "filename": "19278.png",
+            "noisy_path_relative": "19278.png",
+            "clean_path_relative": "19278.png"
+        },
+        {
+            "filename": "19326.png",
+            "noisy_path_relative": "19326.png",
+            "clean_path_relative": "19326.png"
+        },
+        {
+            "filename": "19330.png",
+            "noisy_path_relative": "19330.png",
+            "clean_path_relative": "19330.png"
+        },
+        {
+            "filename": "19342.png",
+            "noisy_path_relative": "19342.png",
+            "clean_path_relative": "19342.png"
+        },
+        {
+            "filename": "19358.png",
+            "noisy_path_relative": "19358.png",
+            "clean_path_relative": "19358.png"
+        },
+        {
+            "filename": "19402.png",
+            "noisy_path_relative": "19402.png",
+            "clean_path_relative": "19402.png"
+        },
+        {
+            "filename": "19412.png",
+            "noisy_path_relative": "19412.png",
+            "clean_path_relative": "19412.png"
+        },
+        {
+            "filename": "19423.png",
+            "noisy_path_relative": "19423.png",
+            "clean_path_relative": "19423.png"
+        },
+        {
+            "filename": "19433.png",
+            "noisy_path_relative": "19433.png",
+            "clean_path_relative": "19433.png"
+        },
+        {
+            "filename": "19465.png",
+            "noisy_path_relative": "19465.png",
+            "clean_path_relative": "19465.png"
+        },
+        {
+            "filename": "19468.png",
+            "noisy_path_relative": "19468.png",
+            "clean_path_relative": "19468.png"
+        },
+        {
+            "filename": "19486.png",
+            "noisy_path_relative": "19486.png",
+            "clean_path_relative": "19486.png"
+        },
+        {
+            "filename": "19573.png",
+            "noisy_path_relative": "19573.png",
+            "clean_path_relative": "19573.png"
+        },
+        {
+            "filename": "19580.png",
+            "noisy_path_relative": "19580.png",
+            "clean_path_relative": "19580.png"
+        },
+        {
+            "filename": "19583.png",
+            "noisy_path_relative": "19583.png",
+            "clean_path_relative": "19583.png"
+        },
+        {
+            "filename": "19641.png",
+            "noisy_path_relative": "19641.png",
+            "clean_path_relative": "19641.png"
+        },
+        {
+            "filename": "19658.png",
+            "noisy_path_relative": "19658.png",
+            "clean_path_relative": "19658.png"
+        },
+        {
+            "filename": "19659.png",
+            "noisy_path_relative": "19659.png",
+            "clean_path_relative": "19659.png"
+        },
+        {
+            "filename": "19672.png",
+            "noisy_path_relative": "19672.png",
+            "clean_path_relative": "19672.png"
+        },
+        {
+            "filename": "19677.png",
+            "noisy_path_relative": "19677.png",
+            "clean_path_relative": "19677.png"
+        },
+        {
+            "filename": "19682.png",
+            "noisy_path_relative": "19682.png",
+            "clean_path_relative": "19682.png"
+        },
+        {
+            "filename": "19687.png",
+            "noisy_path_relative": "19687.png",
+            "clean_path_relative": "19687.png"
+        },
+        {
+            "filename": "19708.png",
+            "noisy_path_relative": "19708.png",
+            "clean_path_relative": "19708.png"
+        },
+        {
+            "filename": "19762.png",
+            "noisy_path_relative": "19762.png",
+            "clean_path_relative": "19762.png"
+        },
+        {
+            "filename": "19763.png",
+            "noisy_path_relative": "19763.png",
+            "clean_path_relative": "19763.png"
+        },
+        {
+            "filename": "19866.png",
+            "noisy_path_relative": "19866.png",
+            "clean_path_relative": "19866.png"
+        },
+        {
+            "filename": "19876.png",
+            "noisy_path_relative": "19876.png",
+            "clean_path_relative": "19876.png"
+        },
+        {
+            "filename": "19912.png",
+            "noisy_path_relative": "19912.png",
+            "clean_path_relative": "19912.png"
+        },
+        {
+            "filename": "19951.png",
+            "noisy_path_relative": "19951.png",
+            "clean_path_relative": "19951.png"
+        }
+    ],
+    "num_valid_pairs": 800
+}
