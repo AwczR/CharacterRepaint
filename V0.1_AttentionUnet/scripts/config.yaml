@@ -1,0 +1,33 @@
+# config.yaml (RECOMMENDED RECOVERY SETTINGS)
+dataset:
+  metadata_path: "/openbayes/home/CharacterRepaint/V0.1_AttentionUnet/scripts/CIRI_syth_metadata.json"
+  batch_size: 16
+  num_workers: 10
+ 
+model_params:
+  image_size: 288
+  in_channels: 1
+  out_channels: 1
+  model_channels: 64         # <-- 使用一个更强的基础通道数
+  channel_mult: [1, 2, 4]    # <-- [核心修改] 列表长度为3，代表3层下采样
+  num_res_blocks: 2          # <-- 每个块使用2个残差层是标准做法
+  groups: 32
+  attention_resolutions: [36] # <-- [核心修改] 在最深层(36x36)应用注意力
+  attention_head_dim: 8
+ 
+diffusion_params:
+  num_timesteps: 500         # <-- 使用一个中等长度的扩散步数
+  beta_max: 0.25             # <-- 允许一个合理的噪声水平
+ 
+training_params:
+  epochs: 200
+  lr: 0.001             # <-- 2e-4 是一个很好的起点
+  time_exp: 1.0                # <-- 均匀采样所有时间步
+  output_dir: "/openbayes/home/CharacterRepaint/V0.1_AttentionUnet/train_output/010-paper-grm-replication" # <-- 新的输出目录
+  save_visualization_freq: 5
+  save_checkpoint_freq: 30
+  device: "cuda"
+ 
+visualization_params:
+  num_samples_to_visualize: 5
+  start_timestep: 400         # <-- [同步修改] 从最后一步开始采样以进行可视化

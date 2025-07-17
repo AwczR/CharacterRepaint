@@ -1,51 +1,40 @@
-# config.yaml (更新以支持 Attention U-Net)
+# config.yaml (RECOMMENDED RECOVERY SETTINGS)
 dataset:
   metadata_path: "/openbayes/home/CharacterRepaint/V0.1_AttentionUnet/scripts/CIRI_syth_metadata.json"
-  batch_size: 12
-  num_workers: 2
-
+  batch_size: 16
+  num_workers: 10
+ 
 model_params:
-  # --- 基础 U-Net 参数 (与之前兼容) ---
   image_size: 288
   in_channels: 1
-  out_channels: 1 # 对于分类任务，此参数被 num_classes 覆盖，但保留以示兼容
-  model_channels: 64
-  channel_mult: [1, 2, 4, 8] # 定义了U-Net的深度和每层的通道数
-  num_res_blocks: 2
-  groups: 32 # GroupNorm中的组数
-
-  # --- 新增: Attention U-Net 特定参数 ---
-  # 定义在哪些特征图分辨率下应用自注意力机制。
-  # 计算方法: image_size / (2^block_index)
-  # 例如: 288/(2^3)=36, 288/(2^4)=18, 288/(2^5)=9
-  # 对于 channel_mult=[1,2,4,8]，深度为4层，分辨率变化为 288 -> 144 -> 72 -> 36
-  # 如果想在最深的两层加入attention，即36x36和bottleneck之后，可以设置为 [36]
-  # 如果想在72x72和36x36层加入，可以设置为 [72, 36]
-  attention_resolutions: [36, 18] # 推荐在较深层使用，以节省计算资源
-  
-  # 每个注意力头的维度。总维度 = head_dim * num_heads。
-  # `diffusers` 会自动计算头的数量。8 或 16 是常见选择。
+  out_channels: 1
+  model_channels: 64         # <-- 使用一个更强的基础通道数
+  channel_mult: [1, 2, 4]    # <-- [核心修改] 列表长度为3，代表3层下采样
+  num_res_blocks: 2          # <-- 每个块使用2个残差层是标准做法
+  groups: 32
+  attention_resolutions: [36] # <-- [核心修改] 在最深层(36x36)应用注意力
   attention_head_dim: 8
-
-
+ 
 diffusion_params:
-  num_timesteps: 1000
-  # beta_start 和 beta_end 在您的代码中未使用，因为您用了固定的 cosine beta schedule
-  # beta_start: 0.0001
-  # beta_end: 0.02
-
+  num_timesteps: 100         # <-- 使用一个中等长度的扩散步数
+  beta_max: 0.02     # <-- 允许一个合理的噪声水平
+ 
 training_params:
-  epochs: 100
-  lr: 0.0001
-  scheduler:
-    name: "StepLR"
-    step_size: 25
-    gamma: 0.35
-  output_dir: "/openbayes/home/CharacterRepaint/V0.1_AttentionUnet/train_output/004-20250709-attentionunet" # 建议为新实验创建新目录
-  save_checkpoint_freq: 10
-  save_visualization_freq: 5
+  epochs: 200
+  lr: 0.001             # <-- 2e-4 是一个很好的起点
+  time_exp: 1.0                # <-- 均匀采样所有时间步
+  output_dir: "/openbayes/home/CharacterRepaint/V0.1_AttentionUnet/train_output/012-20250717-调整class_weight[1.0,2.0]" # <-- 新的输出目录
+  
+  # ---------- 新增和修改的频率控制参数 ----------
+  fast_val_freq: 5           # 新增: 控制“快速验证损失 (L_t)”的计算频率（例如，每1个epoch）。
+  val_loss_timestep: 95     # 新增: “快速验证损失”中，用于对输入图片加噪声的时间步 't'。如果为0，则不加噪声。
+  full_sample_freq: 10     # 修改: 控制完整的去噪采样 (p_sample_loop_restoration)、计算所有图像质量指标 (PSNR, SSIM, F1) 和保存对比图的频率。
+  save_checkpoint_freq: 100  # 现有: 控制模型检查点保存频率。
+  # ---------------------------------------------
+  
   device: "cuda"
-
+ 
 visualization_params:
   num_samples_to_visualize: 4
-  start_timestep: 250
+  start_timestep: 95     # <-- 保持不变，这已经控制了 p_sample_loop_restoration 的起始时间步。
+  
